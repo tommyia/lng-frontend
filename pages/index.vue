@@ -4,14 +4,16 @@
     <div class="bg-white">
       <header class="absolute inset-x-0 top-0 z-50">
         <nav
-          class="flex items-center justify-between p-6 lg:px-16"
+          class="relative mx-auto max-w-7xl px-6 lg:px-0 flex items-center justify-between p-6"
           aria-label="Global"
-        >
+              data-aos="fade-down"
+              data-aos-duration="400"
+              data-aos-offset="0"
+              data-aos-easing="ease-in-sine">
           <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5 flex space-x-2 items-center">
+            <a href="/" class="-m-1.5 p-1.5 flex space-x-2 items-center">
               <span class="sr-only">Your Company</span>
-              <div class="w-12 h-12 rounded-full bg-[#ff6600]" />
-              <span class="font-bold text-2xl">LensaGaruda</span>
+              <img src="lgn.png" class="w-auto h-10" />
             </a>
           </div>
           <div class="flex lg:hidden">
@@ -36,39 +38,42 @@
               </svg>
             </button>
           </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a
-              href="#"
+          <div
+            class="hidden lg:flex lg:gap-x-12">
+            <a href="#aboutus"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >About Us</a>
-            <a
-              href="#"
+              >About Us</a
+            >
+            <a href="#service"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Service</a>
-            <a
-              href="#"
+              >Service</a
+            >
+            <a href="#why"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Why LGN?</a>
-            <a
-              href="#"
+              >Why LGN?</a
+            >
+            <a href="#teams"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Client</a>
-            <a
-              href="#"
+              >Teams</a
+            >
+            <a href="#client"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Teams</a>
+              >Client</a
+            >
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
               class="text-sm font-semibold leading-6 text-white bg-[#ff6600] px-4 py-2"
-            >Let's Talk <span aria-hidden="true">&rarr;</span></a>
+              >Let's Talk <span aria-hidden="true">&rarr;</span></a
+            >
           </div>
+          <div class="absolute bottom-0 w-full h-0.5 bg-[#ff6600] sm:hidden" style="background: linear-gradient(90deg, rgba(255, 102, 0, 0) 0%, rgba(255, 102, 0, 0.52) 51.5%, rgba(255, 102, 0, 0) 100%); opacity: 1;"></div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div class="hidden" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50" />
+          <div class="fixed inset-0 z-50"></div>
           <div
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
           >
@@ -79,7 +84,7 @@
                   class="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""
-                >
+                />
               </a>
               <button
                 type="button"
@@ -108,25 +113,30 @@
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Product</a>
+                    >Product</a
+                  >
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Features</a>
+                    >Features</a
+                  >
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Marketplace</a>
+                    >Marketplace</a
+                  >
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Company</a>
+                    >Company</a
+                  >
                 </div>
                 <div class="py-6">
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Log in</a>
+                    >Log in</a
+                  >
                 </div>
               </div>
             </div>
@@ -136,104 +146,270 @@
 
       <div class="relative isolate">
         <div
-          class="mt-16 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:grid lg:grid-cols-7 lg:items-center lg:gap-x-0 lg:px-0 lg:py-10"
+          class="mt-32 sm:mt-24 mx-auto max-w-7xl px-6 py-4 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-10"
         >
-          <div class="col-span-5 mx-auto lg:mx-0 lg:flex-auto">
+          <div class="col-span-6 mx-auto lg:mx-0 lg:flex-auto">
             <h1
-              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl mr-4"
+              class="text-4xl font-bold tracking-tight text-gray-900 text-center sm:text-left sm:text-7xl mr-4"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
             >
               Intelligent Solution for Higher Quality
               <span class="text-[#ff6600]">Policy</span>
             </h1>
           </div>
-          <div class="relative col-span-2 mx-auto lg:mx-0">
+          <div class="mt-6 sm:mt-0 relative col-span-3 mx-auto lg:mx-0">
             <h1
-              class="text-4xl font-normal tracking-tight text-gray-900 sm:text-3xl absolute inset-0"
+              class="text-xl font-normal tracking-tight text-gray-900 sm:text-3xl text-center sm:text-left absolute inset-0"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
             >
               A tailor-made service. We have the people you need.
             </h1>
           </div>
         </div>
         <div
-          class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:grid lg:grid-cols-7 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
+          class="mt-8 sm:mt-0 mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
         >
-          <div class="col-span-5 mx-auto lg:mx-0 lg:flex-auto">
+          <div class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex">
             <img
-              class="w-full h-56 object-cover pr-8"
-              data-aos="fade-left"
+              class="w-full h-56 object-cover"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
               src="https://images.unsplash.com/photo-1550592704-6c76defa9985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            >
+            />
           </div>
-          <div class="relative col-span-2 mx-auto lg:mx-0 bg-[#ff6600]">
-            <div class="grid grid-cols-2">
-              <div class="flex flex-col text-white text-center px-8 py-10">
-                <h3 class="text-4xl font-bold">
-                  40 +
-                </h3>
-                <h3 class="mt-2 leading-5">
-                  Company Clients of Fellows LGN
-                </h3>
+          <div
+            class="relative h-full col-span-3 mx-auto lg:mx-0 sm:bg-[#ff6600]"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+            <div class="grid grid-cols-2 h-full">
+              <div class="col-span-2 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+                <h3 class="text-4xl font-bold">40+</h3>
+                <h3 class="mt-2 leading-5 font-medium sm:font-normal">Company Clients of Fellows LGN</h3>
               </div>
-              <div class="flex flex-col text-white text-center px-8 py-10">
-                <h3 class="text-4xl font-bold">
-                  7 +
-                </h3>
-                <h3 class="mt-2 leading-5">
-                  Recent Portfolios
-                </h3>
+              <div class="col-span-2 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+                <h3 class="text-4xl font-bold">7+</h3>
+                <h3 class="mt-2 leading-5 font-medium sm:font-normal">Recent <br />Portfolios</h3>
               </div>
             </div>
+            <div class="absolute w-full h-auto z-0 bg-[#ff6600] inset-0 blur-2xl" style="aspect-ratio:1/1; background: rgb(255,102,0); background: radial-gradient(circle, rgba(255,102,0,0.25) 0%, rgba(255,102,0,0) 60%);"></div>
           </div>
         </div>
         <div
-          class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:grid lg:grid-cols-7 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
+          class="mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
         >
-          <div class="relative col-span-2 mx-auto lg:mx-0 bg-[#ff6600]">
-            <div class="flex flex-col text-white text-center px-8 py-14">
-              <h3 class="text-3xl font-bold">
-                Get Started<span class="ml-4" aria-hidden="true">&rarr;</span>
+          <div class="w-full h-full relative col-span-3 mx-auto lg:mx-0 bg-[#ff6600] py-8 sm:py-0"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine">
+            <div class="h-full flex flex-col justify-center text-white text-center">
+              <h3 class="flex flex-row items-center justify-center text-3xl font-medium">
+                Get Started<span class="ml-4"><svg class="mt-1 w-16 h-16 rotate-45 border-2 border-white rounded-full p-4"
+                data-slot="icon"
+                fill="none"
+                stroke-width="3"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                </svg></span>
               </h3>
             </div>
           </div>
-          <div class="col-span-5 mx-auto lg:mx-0 lg:flex-auto">
+          <div class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine">
             <img
-              class="w-full h-56 object-cover pl-8"
+              class="w-full h-56 object-cover"
               src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            >
+            />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="overflow-hidden bg-white py-24 sm:py-32">
+    <div id="aboutus" class="overflow-hidden bg-white py-24 sm:py-32">
       <div class="mx-auto max-w-7xl md:px-6 lg:px-0">
         <div
-          class="grid grid-cols-1 gap-x-16 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center"
+          class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center"
         >
-          <div class="sm:px-6 lg:px-0">
-            <div
-              class="relative isolate overflow-hidden bg-[#ff6600] px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none"
-            >
+          <div class="relative mt-20"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="50"
+              data-aos-easing="ease-in-sine">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
               <div
-                class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white"
-                aria-hidden="true"
-              />
-              <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-                <img
-                  src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-                  alt="Product screenshot"
-                  width="2432"
-                  height="1442"
-                  class="-mb-12 w-[57rem] max-w-none bg-gray-800 ring-1 ring-white/10"
-                >
+                class="absolute w-1/3 h-1/2 bg-[#ff6600] left-1/3 top-1/3"
+              ></div>
+              <div class="flex flex-col space-y-8">
+                <div class="relative">
+                  <div
+                    aria-hidden="true"
+                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+                  >
+                    <svg
+                      class="absolute left-1/2 -top-9 -ml-3 lg:-right-10 lg:left-auto"
+                      width="108"
+                      height="105"
+                      fill="none"
+                      viewBox="0 0 108 105"
+                    >
+                      <defs>
+                        <pattern
+                          id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            x="0"
+                            y="0"
+                            width="4"
+                            height="4"
+                            class="text-[#ff6600]"
+                            fill="currentColor"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width="404"
+                        height="392"
+                        fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
+                  >
+                    <div class="relative overflow-hidden pb-10 pt-64">
+                      <img
+                        class="absolute inset-0 h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="relative transform rotate-90">
+                  <div
+                    aria-hidden="true"
+                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+                  >
+                    <svg
+                      class="absolute left-1/2 -bottom-8 -ml-3 lg:-right-10 lg:left-auto"
+                      width="108"
+                      height="105"
+                      fill="none"
+                      viewBox="0 0 108 105"
+                    >
+                      <defs>
+                        <pattern
+                          id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            x="0"
+                            y="0"
+                            width="4"
+                            height="4"
+                            class="text-[#ff6600]"
+                            fill="currentColor"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width="404"
+                        height="392"
+                        fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
+                  >
+                    <div class="relative overflow-hidden pb-10 pt-64">
+                      <img
+                        class="absolute inset-0 h-full w-full object-cover transform -rotate-90"
+                        src="https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div
-                class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10"
-                aria-hidden="true"
-              />
+              <div class="relative flex flex-col justify-center">
+                <div class="">
+                  <div
+                    aria-hidden="true"
+                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+                  >
+                    <svg
+                      class="absolute left-1/2 bottom-1/3 -ml-3 lg:-right-11 lg:left-auto"
+                      width="108"
+                      height="105"
+                      fill="none"
+                      viewBox="0 0 108 105"
+                    >
+                      <defs>
+                        <pattern
+                          id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            x="0"
+                            y="0"
+                            width="4"
+                            height="4"
+                            class="text-[#ff6600]"
+                            fill="currentColor"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width="404"
+                        height="392"
+                        fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
+                  >
+                    <div class="relative overflow-hidden pb-10 pt-64">
+                      <img
+                        class="absolute inset-0 h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="px-6 lg:px-0 lg:pr-4 lg:pt-0">
+          <div class="px-6 lg:px-0 lg:pr-4 lg:pt-0"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-offset="50"
+              data-aos-easing="ease-in-sine">
             <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
                 About Us
@@ -253,7 +429,8 @@
                 <a
                   href="#"
                   class="text-lg font-medium leading-6 text-white bg-[#ff6600] px-6 py-4"
-                >Get Started</a>
+                  >Get Started</a
+                >
               </div>
             </div>
           </div>
@@ -261,19 +438,23 @@
       </div>
     </div>
 
-    <div class="bg-white py-24 sm:py-32">
+    <div id="service" class="bg-white py-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto lg:mx-0">
+        <div class="mx-auto lg:mx-0"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="50"
+              data-aos-easing="ease-in-sine">
           <p class="text-base font-semibold leading-7 text-[#ff6600]">
             Our Service
           </p>
           <div class="flex items-baseline">
             <h2
-              class="mt-2 text-4xl w-2/5 font-bold tracking-tight text-gray-900 sm:text-6xl"
+              class="mt-2 text-3xl w-full sm:w-2/5 font-bold tracking-tight text-gray-900 sm:text-6xl"
             >
               What Services We're Offering
             </h2>
-            <p class="mt-6 w-3/5 text-lg leading-8 text-gray-500">
+            <p class="mt-6 w-3/5 text-lg leading-8 text-gray-500 hidden">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
               hic ullam earum doloremque quo quia quae sapiente architecto quasi
               consectetur voluptates asperiores, ex dolores eveniet possimus ab!
@@ -281,129 +462,400 @@
             </p>
           </div>
         </div>
-        <div class="mt-16 grid grid-cols-1 divide-y">
-          <div>
-            <h1
-              class="py-8 text-4xl font-medium tracking-tight text-gray-900 sm:text-2xl"
-            >
-              Consulting Services in Public Policy
-            </h1>
-          </div>
-          <div>
-            <h1
-              class="py-8 text-4xl font-medium tracking-tight text-gray-900 sm:text-2xl"
-            >
-              3rd Party Researchers, Surveyors, and Data Providers
-            </h1>
-          </div>
-          <div>
-            <h1
-              class="py-8 text-4xl font-medium tracking-tight text-gray-900 sm:text-2xl"
-            >
-              Advisory Services from Experts and Thought Leaders
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="overflow-hidden bg-white py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl md:px-6 lg:px-0">
         <div
-          class="grid grid-cols-1 gap-x-16 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center"
+          class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-3 lg:items-center"
         >
-          <div class="sm:px-6 lg:px-0">
-            <div
-              class="relative isolate overflow-hidden bg-[#ff6600] px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none"
-            >
-              <div
-                class="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white"
-                aria-hidden="true"
-              />
-              <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-                <img
-                  src="https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Product screenshot"
-                  width="2432"
-                  height="1442"
-                  class="-mb-12 w-[57rem] max-w-none bg-gray-800 ring-1 ring-white/10"
-                >
-              </div>
-              <div
-                class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10"
-                aria-hidden="true"
-              />
+          <div class="col-span-2 mt-8 sm:mt-16 grid grid-cols-1 divide-y"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine">
+            <div>
+              <h1
+                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
+              >
+                Consulting Services in Public Policy
+              </h1>
+            </div>
+            <div>
+              <h1
+                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
+              >
+                3rd Party Researchers, Surveyors, and Data Providers
+              </h1>
+            </div>
+            <div>
+              <h1
+                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
+              >
+                Advisory Services from Experts and Thought Leaders
+              </h1>
             </div>
           </div>
-          <div class="px-6 lg:px-0 lg:pr-4 lg:pt-0">
-            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-              <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
-                Why Choose Us
-              </h2>
-              <p
-                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
-              >
-                Why You Should Choose LensaGaruda
-              </p>
-              <dl class="mt-5 grid grid-cols-1 gap-2">
-                <div class="py-2">
-                  <dd
-                    class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
+          <div class="relative mt-20">
+            <div class="">
+              <div class="flex flex-col space-y-8">
+                <div class="relative">
+                  <div
+                    aria-hidden="true"
+                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+                      data-aos="fade-left"
+                      data-aos-duration="1300"
+                      data-aos-offset="100"
+                      data-aos-easing="ease-in-sine"
                   >
-                    01
-                  </dd>
-                  <dt class="text-lg font-normal text-gray-900">
-                    LGN's greatest asset is its researchers who are graduates or
-                    students from various leading universities in Indonesia and
-                    the world
-                  </dt>
-                </div>
-                <div class="py-2">
-                  <dd
-                    class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
+                    <svg
+                      class="absolute left-1/2 -top-9 -ml-3 lg:-right-10 lg:left-auto"
+                      width="108"
+                      height="105"
+                      fill="none"
+                      viewBox="0 0 108 105"
+                    >
+                      <defs>
+                        <pattern
+                          id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            x="0"
+                            y="0"
+                            width="4"
+                            height="4"
+                            class="text-[#ff6600]"
+                            fill="currentColor"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width="404"
+                        height="392"
+                        fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
                   >
-                    02
-                  </dd>
-                  <dt class="text-lg font-normal text-gray-900">
-                    LGN has diverse backgrounds ranging from the corporate world
-                    to bureaucrats so that they can compile studies that involve
-                    various perspectives.
-                  </dt>
-                </div>
-                <div class="py-2">
-                  <dd
-                    class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
+                    <div
+                      class="absolute right-1/2 -bottom-9 -ml-3 lg:right-32 lg:left-auto w-64 h-64 bg-[#ff6600]"
+                    ></div>
+                  </div>
+                  <div
+                    class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
+                    data-aos="fade-left"
+                    data-aos-duration="1100"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
                   >
-                    03
-                  </dd>
-                  <dt class="text-lg font-normal text-gray-900">
-                    LGN's research is not only academic in nature but is
-                    oriented towards practical policy recommendations that are
-                    more useful for the government in carry out policy execution
-                  </dt>
+                    <div class="relative overflow-hidden pb-10 pt-64">
+                      <img
+                        class="absolute inset-0 h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1587089879249-87bf7d2972df?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="py-2">
-                  <dd
-                    class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
-                  >
-                    04
-                  </dd>
-                  <dt class="text-lg font-normal text-gray-900">
-                    All LGN researchers are LPDP awardees. who are the best sons
-                    and daughters of the nation who strongly committed to
-                    contributing to solving the nation's various challenges
-                  </dt>
-                </div>
-              </dl>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-gray-900 py-24 sm:py-32">
+    <div id="why" class="relative mt-32 mb-32">
+      <div
+        class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8"
+      >
+        <div class="relative sm:py-16 lg:py-0"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+              data-aos-delay="200"
+              data-aos-easing="ease-in-sine">
+          <div
+            aria-hidden="true"
+            class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+          >
+            <div
+              class="absolute inset-y-0 right-1/2 w-full bg-[#ff6600]/20 lg:right-72"
+            ></div>
+            <svg
+              class="absolute left-1/2 top-8 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
+              width="404"
+              height="392"
+              fill="none"
+              viewBox="0 0 404 392"
+            >
+              <defs>
+                <pattern
+                  id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-[#ff6600]"
+                    fill="currentColor"
+                  />
+                </pattern>
+              </defs>
+              <rect
+                width="404"
+                height="392"
+                fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+              />
+            </svg>
+          </div>
+          <div
+            class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-20"
+          >
+            <div class="relative overflow-hidden pb-10 pt-64">
+              <img
+                class="absolute inset-0 h-full w-full object-cover"
+                src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <div class="relative px-8">
+                <blockquote class="mt-8 invisible">
+                  <div class="relative text-2xl text-white md:flex-grow">
+                    <p class="relative">
+                      Tincidunt integer commodo, cursus etiam aliquam neque, et.
+                      Consectetur pretium in volutpat, diam. Montes, magna
+                      cursus nulla feugiat dignissim id lobortis amet. Lorem
+                      ipsum, dolor sit amet consectetur adipisicing elit.
+                      Cupiditate aliquam sit adipisci odio incidunt eligendi
+                      labore, beatae omnis quidem cumque ipsa sunt dolores
+                      voluptas quam obcaecati laboriosam reiciendis facere
+                      culpa!
+                    </p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 sm:mt-0 relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
+          <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-[#ff6600]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+              data-aos-easing="ease-in-sine">
+              Why Choose Us
+            </h2>
+            <p
+              class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+              data-aos-easing="ease-in-sine"
+            >
+              Why You Should Choose LensaGaruda
+            </p>
+            <dl class="mt-5 grid grid-cols-1 gap-2">
+              <div class="py-2"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="100"
+                data-aos-delay="100"
+                data-aos-easing="ease-in-sine">
+                <dd
+                  class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
+                >
+                  01
+                </dd>
+                <dt class="text-lg font-normal text-gray-900">
+                  LGN's greatest asset is its researchers who are graduates or
+                  students from various leading universities in Indonesia and
+                  the world
+                </dt>
+              </div>
+              <div class="py-2"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="100"
+                data-aos-delay="200"
+                data-aos-easing="ease-in-sine">
+                <dd
+                  class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
+                >
+                  02
+                </dd>
+                <dt class="text-lg font-normal text-gray-900">
+                  LGN has diverse backgrounds ranging from the corporate world
+                  to bureaucrats so that they can compile studies that involve
+                  various perspectives.
+                </dt>
+              </div>
+              <div class="py-2"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="100"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-sine">
+                <dd
+                  class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
+                >
+                  03
+                </dd>
+                <dt class="text-lg font-normal text-gray-900">
+                  LGN's research is not only academic in nature but is oriented
+                  towards practical policy recommendations that are more useful
+                  for the government in carry out policy execution
+                </dt>
+              </div>
+              <div class="py-2"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="-20"
+                data-aos-delay="400"
+                data-aos-easing="ease-in-sine">
+                <dd
+                  class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
+                >
+                  04
+                </dd>
+                <dt class="text-lg font-normal text-gray-900">
+                  All LGN researchers are LPDP awardees. who are the best sons
+                  and daughters of the nation who strongly committed to
+                  contributing to solving the nation's various challenges
+                </dt>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project" class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto lg:mx-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="50"
+          data-aos-easing="ease-in-sine">
+          <p class="text-base font-semibold leading-7 text-[#ff6600]">
+            Our Projects
+          </p>
+          <div class="flex flex-col sm:flex-row items-baseline sm:space-x-8">
+            <h2
+              class="mt-2 text-3xl sm:w-2/5 font-bold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              Discover Our Selected Projects
+            </h2>
+            <p class="mt-6 sm:pl-20 sm:w-3/5 text-lg leading-8 text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+              hic ullam earum doloremque quo quia quae sapiente architecto quasi
+              consectetur voluptates asperiores, ex dolores eveniet possimus ab!
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-16 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3 lg:items-center px-1"
+        >
+          <article class="flex flex-col items-start justify-between"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine">
+            <div class="relative w-full">
+              <img
+                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+              />
+            </div>
+            <div class="max-w-xl">
+              <div class="group relative">
+                <h3 class="mt-6 text-2xl font-semibold leading-6 text-gray-900">
+                  Boost your conversion rate
+                </h3>
+                <p class="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
+                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
+                  totam vitae illo. Non aliquid explicabo unde.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="flex flex-col items-start justify-between"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine">
+            <div class="relative w-full">
+              <img
+                src="https://images.unsplash.com/photo-1535978115060-d01ae6702684?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+              />
+            </div>
+            <div class="max-w-xl">
+              <div class="group relative">
+                <h3 class="mt-6 text-2xl font-semibold leading-6 text-gray-900">
+                  Boost your conversion rate
+                </h3>
+                <p class="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
+                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
+                  totam vitae illo. Non aliquid explicabo unde.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="flex flex-col items-start justify-between"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine">
+            <div class="relative w-full">
+              <img
+                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+              />
+            </div>
+            <div class="max-w-xl">
+              <div class="group relative">
+                <h3 class="mt-6 text-2xl font-semibold leading-6 text-gray-900">
+                  Boost your conversion rate
+                </h3>
+                <p class="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
+                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
+                  totam vitae illo. Non aliquid explicabo unde.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div id="teams" class="bg-gray-900 py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <div class="mx-auto max-w-2xl">
+        <div class="mx-auto max-w-2xl"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-easing="ease-in-sine">
           <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
             Our Team
           </h2>
@@ -418,16 +870,19 @@
           role="list"
           class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
-          <li class="relative group h-96 overflow-hidden bg-gray-800">
+          <li class="relative group h-96 overflow-hidden bg-gray-800"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine">
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Ansy Alghasi
               </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CEO
-              </p>
+              <p class="text-sm leading-6 text-gray-400">CEO</p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -436,11 +891,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            >
+            />
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
+              <div class="absolute w-full h-96 bg-black opacity-60"></div>
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -497,16 +952,19 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800">
+          <li class="relative group h-96 overflow-hidden bg-gray-800"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="400"
+          data-aos-easing="ease-in-sine">
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Megawati
               </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CMO
-              </p>
+              <p class="text-sm leading-6 text-gray-400">CMO</p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -515,11 +973,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            >
+            />
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
+              <div class="absolute w-full h-96 bg-black opacity-60"></div>
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -576,16 +1034,19 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800">
+          <li class="relative group h-96 overflow-hidden bg-gray-800"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="600"
+          data-aos-easing="ease-in-sine">
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl w-32 text-left font-bold leading-7 tracking-tight text-white"
               >
                 Fitri N. Anggraeni
               </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                Senior Designer
-              </p>
+              <p class="text-sm leading-6 text-gray-400">Senior Designer</p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -594,11 +1055,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            >
+            />
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
+              <div class="absolute w-full h-96 bg-black opacity-60"></div>
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -661,7 +1122,11 @@
 
     <div class="bg-gray-900 pb-24">
       <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <div class="mx-auto max-w-2xl">
+        <div class="mx-auto max-w-2xl"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-easing="ease-in-sine">
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Meet Our Commissioner
           </h2>
@@ -670,16 +1135,19 @@
           role="list"
           class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
-          <li class="relative group h-96 overflow-hidden bg-gray-800">
+          <li class="relative group h-96 overflow-hidden bg-gray-800"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine">
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Ansy Alghasi
               </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CEO
-              </p>
+              <p class="text-sm leading-6 text-gray-400">CEO</p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -688,11 +1156,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            >
+            />
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
+              <div class="absolute w-full h-96 bg-black opacity-60"></div>
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -749,16 +1217,19 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800">
+          <li class="relative group h-96 overflow-hidden bg-gray-800"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="400"
+          data-aos-easing="ease-in-sine">
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Megawati
               </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CMO
-              </p>
+              <p class="text-sm leading-6 text-gray-400">CMO</p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -767,11 +1238,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            >
+            />
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
+              <div class="absolute w-full h-96 bg-black opacity-60"></div>
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -828,16 +1299,19 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800">
+          <li class="relative group h-96 overflow-hidden bg-gray-800"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="600"
+          data-aos-easing="ease-in-sine">
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl w-32 text-left font-bold leading-7 tracking-tight text-white"
               >
                 Fitri N. Anggraeni
               </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                Senior Designer
-              </p>
+              <p class="text-sm leading-6 text-gray-400">Senior Designer</p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -846,11 +1320,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            >
+            />
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
+              <div class="absolute w-full h-96 bg-black opacity-60"></div>
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -911,15 +1385,32 @@
       </div>
     </div>
 
+    <div id="client" class="bg-white pt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:max-w-none">
+          <h2 class="text-lg font-semibold leading-8 text-gray-900">
+            Trusted by the world’s most innovative teams
+          </h2>
+
+          <Slider class="mt-8" />
+        </div>
+      </div>
+    </div>
+
     <div class="relative isolate bg-white">
       <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div
           class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
         >
           <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div
               class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden lg:w-1/2"
-            />
+            ></div>
 
             <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
               Let’s Talk
@@ -976,8 +1467,10 @@
                 <dd>
                   <a
                     class="hover:text-gray-900"
-                    href="tel:+1 (555) 234-5678"
-                  >+6281 314 626 624 (Ansy)</a>
+                    href="https://api.whatsapp.com/send?phone=6281314626624&text=Halo Lensa Garuda Nusantara"
+                    target="_blank"
+                    >+6281 314 626 624 (Ansy)</a
+                  >
                 </dd>
               </div>
               <div class="flex gap-x-4">
@@ -1001,8 +1494,9 @@
                 <dd>
                   <a
                     class="hover:text-gray-900"
-                    href="mailto:hello@example.com"
-                  >lensa.garuda@gmail.com</a>
+                    href="mailto:lensa.garuda@gmail.com"
+                    >lensa.garuda@gmail.com</a
+                  >
                 </dd>
               </div>
             </dl>
@@ -1012,6 +1506,11 @@
           action="#"
           method="POST"
           class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-offset="50"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
         >
           <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -1019,66 +1518,70 @@
                 <label
                   for="name"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                >Name</label>
+                  >Name</label
+                >
                 <div class="mt-2.5">
                   <input
-                    id="name"
                     type="name"
                     name="name"
+                    id="name"
                     autocomplete="name"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  >
+                  />
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="email"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                >Email</label>
+                  >Email</label
+                >
                 <div class="mt-2.5">
                   <input
-                    id="email"
                     type="email"
                     name="email"
+                    id="email"
                     autocomplete="email"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  >
+                  />
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="phone-number"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                >Phone number</label>
+                  >Phone number</label
+                >
                 <div class="mt-2.5">
                   <input
-                    id="phone-number"
                     type="tel"
                     name="phone-number"
+                    id="phone-number"
                     autocomplete="tel"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  >
+                  />
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="message"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                >Message</label>
+                  >Message</label
+                >
                 <div class="mt-2.5">
                   <textarea
-                    id="message"
                     name="message"
+                    id="message"
                     rows="4"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
+                  ></textarea>
                 </div>
               </div>
             </div>
             <div class="mt-8 flex justify-end">
               <button
                 type="submit"
-                class="rounded-md bg-[#ff6600] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                class="w-full sm:w-max rounded-md bg-[#ff6600] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Send message
               </button>
@@ -1088,17 +1591,19 @@
       </div>
     </div>
 
-    <footer class="bg-gray-900" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" class="sr-only">
-        Footer
-      </h2>
+    <footer class="bg-gray-900"
+      aria-labelledby="footer-heading"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-easing="ease-out-cubic">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
       <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 lg:px-8">
         <p class="text-center mx-auto text-4xl text-white">
           Please feel free to get in touch with us
         </p>
         <div class="pt-8 lg:flex lg:items-center lg:justify-between">
           <dl
-            class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-16 text-base leading-7 text-gray-600 mx-auto"
+            class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-16 text-base leading-7 text-gray-300 mx-auto"
           >
             <div class="flex gap-x-4">
               <dt class="flex-none">
@@ -1124,7 +1629,7 @@
                 Daerah KhususIbukota Jakarta 11740
               </dd>
             </div>
-            <div class="flex gap-x-4">
+            <div class="flex gap-x-4 text-gray-300">
               <dt class="flex-none">
                 <span class="sr-only">Telephone</span>
                 <svg
@@ -1144,12 +1649,14 @@
               </dt>
               <dd>
                 <a
-                  class="hover:text-gray-900"
-                  href="tel:+1 (555) 234-5678"
-                >+6281 314 626 624 (Ansy)</a>
+                  class="hover:text-[#ff6600]"
+                  href="https://api.whatsapp.com/send?phone=6281314626624&text=Halo Lensa Garuda Nusantara"
+                  target="_blank"
+                  >+6281 314 626 624 (Ansy)</a
+                >
               </dd>
             </div>
-            <div class="flex gap-x-4">
+            <div class="flex gap-x-4 text-gray-300">
               <dt class="flex-none">
                 <span class="sr-only">Email</span>
                 <svg
@@ -1169,9 +1676,10 @@
               </dt>
               <dd>
                 <a
-                  class="hover:text-gray-900"
-                  href="mailto:hello@example.com"
-                >lensa.garuda@gmail.com</a>
+                  class="hover:text-[#ff6600]"
+                  href="mailto:lensa.garuda@gmail.com"
+                  >lensa.garuda@gmail.com</a
+                >
               </dd>
             </div>
           </dl>
@@ -1263,3 +1771,42 @@
     </footer>
   </div>
 </template>
+
+<script>
+import AOS from 'aos'
+
+export default {
+  head () {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://unpkg.com/aos@2.3.1/dist/aos.css'
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
+        }
+      ],
+      script: [
+        {
+          src: 'https://unpkg.com/aos@2.3.1/dist/aos.js',
+          body: true,
+          async: true,
+          defer: true
+        },
+        {
+          src: 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
+          body: true,
+          async: true,
+          defer: true
+        }
+      ]
+    }
+  },
+  mounted () {
+    AOS.init({
+    })
+  }
+}
+</script>
