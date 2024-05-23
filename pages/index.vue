@@ -6,14 +6,15 @@
         <nav
           class="relative mx-auto max-w-7xl px-6 lg:px-0 flex items-center justify-between p-6"
           aria-label="Global"
-              data-aos="fade-down"
-              data-aos-duration="400"
-              data-aos-offset="0"
-              data-aos-easing="ease-in-sine">
+          data-aos="fade-down"
+          data-aos-duration="400"
+          data-aos-offset="0"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5 flex space-x-2 items-center">
               <span class="sr-only">Your Company</span>
-              <img src="lgn.png" class="w-auto h-10" />
+              <img src="lgn.png" class="w-auto h-10">
             </a>
           </div>
           <div class="flex lg:hidden">
@@ -39,41 +40,41 @@
             </button>
           </div>
           <div
-            class="hidden lg:flex lg:gap-x-12">
-            <a href="#aboutus"
+            class="hidden lg:flex lg:gap-x-12"
+          >
+            <a
+              href="#aboutus"
               class="text-sm font-semibold leading-6 text-gray-900"
-              >About Us</a
-            >
-            <a href="#service"
+            >About Us</a>
+            <a
+              href="#service"
               class="text-sm font-semibold leading-6 text-gray-900"
-              >Service</a
-            >
-            <a href="#why"
+            >Service</a>
+            <a
+              href="#why"
               class="text-sm font-semibold leading-6 text-gray-900"
-              >Why LGN?</a
-            >
-            <a href="#teams"
+            >Why LGN?</a>
+            <a
+              href="#teams"
               class="text-sm font-semibold leading-6 text-gray-900"
-              >Teams</a
-            >
-            <a href="#client"
+            >Teams</a>
+            <a
+              href="#client"
               class="text-sm font-semibold leading-6 text-gray-900"
-              >Client</a
-            >
+            >Client</a>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
               class="text-sm font-semibold leading-6 text-white bg-[#ff6600] px-4 py-2"
-              >Let's Talk <span aria-hidden="true">&rarr;</span></a
-            >
+            >Let's Talk <span aria-hidden="true">&rarr;</span></a>
           </div>
-          <div class="absolute bottom-0 w-full h-0.5 bg-[#ff6600] sm:hidden" style="background: linear-gradient(90deg, rgba(255, 102, 0, 0) 0%, rgba(255, 102, 0, 0.52) 51.5%, rgba(255, 102, 0, 0) 100%); opacity: 1;"></div>
+          <div class="absolute bottom-0 w-full h-0.5 bg-[#ff6600] sm:hidden" style="background: linear-gradient(90deg, rgba(255, 102, 0, 0) 0%, rgba(255, 102, 0, 0.52) 51.5%, rgba(255, 102, 0, 0) 100%); opacity: 1;" />
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div class="hidden" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50"></div>
+          <div class="fixed inset-0 z-50" />
           <div
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
           >
@@ -84,7 +85,7 @@
                   class="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""
-                />
+                >
               </a>
               <button
                 type="button"
@@ -113,30 +114,25 @@
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >Product</a
-                  >
+                  >Product</a>
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >Features</a
-                  >
+                  >Features</a>
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >Marketplace</a
-                  >
+                  >Marketplace</a>
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >Company</a
-                  >
+                  >Company</a>
                 </div>
                 <div class="py-6">
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >Log in</a
-                  >
+                  >Log in</a>
                 </div>
               </div>
             </div>
@@ -161,8 +157,8 @@
           <div class="mt-6 sm:mt-0 relative col-span-3 mx-auto lg:mx-0">
             <h1
               class="text-xl font-normal tracking-tight text-gray-900 sm:text-3xl text-center sm:text-left absolute inset-0"
-            data-aos="fade-left"
-            data-aos-easing="ease-in-sine"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-sine"
             >
               A tailor-made service. We have the people you need.
             </h1>
@@ -179,57 +175,210 @@
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
               src="https://images.unsplash.com/photo-1550592704-6c76defa9985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
+            >
           </div>
           <div
             class="relative h-full col-span-3 mx-auto lg:mx-0 sm:bg-[#ff6600]"
             data-aos="fade-left"
             data-aos-offset="300"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-sine">
+            data-aos-easing="ease-in-sine"
+          >
             <div class="grid grid-cols-2 h-full">
               <div class="col-span-2 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
-                <h3 class="text-4xl font-bold">40+</h3>
-                <h3 class="mt-2 leading-5 font-medium sm:font-normal">Company Clients of Fellows LGN</h3>
+                <h3 class="text-4xl font-bold">
+                  40+
+                </h3>
+                <h3 class="mt-2 leading-5 font-medium sm:font-normal">
+                  Company Clients of Fellows LGN
+                </h3>
               </div>
               <div class="col-span-2 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
-                <h3 class="text-4xl font-bold">7+</h3>
-                <h3 class="mt-2 leading-5 font-medium sm:font-normal">Recent <br />Portfolios</h3>
+                <h3 class="text-4xl font-bold">
+                  7+
+                </h3>
+                <h3 class="mt-2 leading-5 font-medium sm:font-normal">
+                  Recent <br>Portfolios
+                </h3>
               </div>
             </div>
-            <div class="absolute w-full h-auto z-0 bg-[#ff6600] inset-0 blur-2xl" style="aspect-ratio:1/1; background: rgb(255,102,0); background: radial-gradient(circle, rgba(255,102,0,0.25) 0%, rgba(255,102,0,0) 60%);"></div>
+            <div class="absolute w-full h-auto z-0 bg-[#ff6600] inset-0 blur-2xl" style="aspect-ratio:1/1; background: rgb(255,102,0); background: radial-gradient(circle, rgba(255,102,0,0.25) 0%, rgba(255,102,0,0) 60%);" />
           </div>
         </div>
         <div
           class="mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
         >
-          <div class="w-full h-full relative col-span-3 mx-auto lg:mx-0 bg-[#ff6600] py-8 sm:py-0"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-sine">
+          <div
+            class="w-full h-full relative col-span-3 mx-auto lg:mx-0 bg-[#ff6600] py-8 sm:py-0"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="h-full flex flex-col justify-center text-white text-center">
               <h3 class="flex flex-row items-center justify-center text-3xl font-medium">
-                Get Started<span class="ml-4"><svg class="mt-1 w-16 h-16 rotate-45 border-2 border-white rounded-full p-4"
-                data-slot="icon"
-                fill="none"
-                stroke-width="3"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                Get Started<span class="ml-4"><svg
+                  class="mt-1 w-16 h-16 rotate-45 border-2 border-white rounded-full p-4"
+                  data-slot="icon"
+                  fill="none"
+                  stroke-width="3"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                 </svg></span>
               </h3>
             </div>
           </div>
-          <div class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-sine">
+          <div
+            class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               class="w-full h-56 object-cover"
               src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="service" class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto lg:mx-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="50"
+          data-aos-easing="ease-in-sine"
+        >
+          <p class="text-base font-semibold leading-7 text-[#ff6600]">
+            Our Service
+          </p>
+          <div class="flex items-baseline">
+            <h2
+              class="mt-2 text-3xl w-full sm:w-2/5 font-bold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              What Services We're Offering
+            </h2>
+            <p class="mt-6 w-3/5 text-lg leading-8 text-gray-500 hidden">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+              hic ullam earum doloremque quo quia quae sapiente architecto quasi
+              consectetur voluptates asperiores, ex dolores eveniet possimus ab!
+              Natus, ullam laudantium.
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-3 lg:items-center"
+        >
+          <div
+            class="col-span-2 mt-8 sm:mt-16 grid grid-cols-1 divide-y"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
+            <div>
+              <h1
+                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
+              >
+                Consulting Services in Public Policy
+              </h1>
+            </div>
+            <div>
+              <h1
+                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
+              >
+                3rd Party Researchers, Surveyors, and Data Providers
+              </h1>
+            </div>
+            <div>
+              <h1
+                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
+              >
+                Advisory Services from Experts and Thought Leaders
+              </h1>
+            </div>
+          </div>
+          <div class="relative mt-20">
+            <div class="">
+              <div class="flex flex-col space-y-8">
+                <div class="relative">
+                  <div
+                    aria-hidden="true"
+                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+                    data-aos="fade-left"
+                    data-aos-duration="1300"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <svg
+                      class="absolute left-1/2 -top-9 -ml-3 lg:-right-10 lg:left-auto"
+                      width="108"
+                      height="105"
+                      fill="none"
+                      viewBox="0 0 108 105"
+                    >
+                      <defs>
+                        <pattern
+                          id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            x="0"
+                            y="0"
+                            width="4"
+                            height="4"
+                            class="text-[#ff6600]"
+                            fill="currentColor"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width="404"
+                        height="392"
+                        fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <div
+                      class="absolute right-1/2 -bottom-9 -ml-3 lg:right-32 lg:left-auto w-64 h-64 bg-[#ff6600]"
+                    />
+                  </div>
+                  <div
+                    class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
+                    data-aos="fade-left"
+                    data-aos-duration="1100"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <div class="relative overflow-hidden pb-10 pt-64">
+                      <img
+                        class="absolute inset-0 h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1587089879249-87bf7d2972df?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,15 +389,17 @@
         <div
           class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center"
         >
-          <div class="relative mt-20"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="50"
-              data-aos-easing="ease-in-sine">
+          <div
+            class="relative mt-20"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
               <div
                 class="absolute w-1/3 h-1/2 bg-[#ff6600] left-1/3 top-1/3"
-              ></div>
+              />
               <div class="flex flex-col space-y-8">
                 <div class="relative">
                   <div
@@ -296,7 +447,7 @@
                         class="absolute inset-0 h-full w-full object-cover"
                         src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt=""
-                      />
+                      >
                     </div>
                   </div>
                 </div>
@@ -346,7 +497,7 @@
                         class="absolute inset-0 h-full w-full object-cover transform -rotate-90"
                         src="https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt=""
-                      />
+                      >
                     </div>
                   </div>
                 </div>
@@ -398,18 +549,20 @@
                         class="absolute inset-0 h-full w-full object-cover"
                         src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt=""
-                      />
+                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="px-6 lg:px-0 lg:pr-4 lg:pt-0"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-offset="50"
-              data-aos-easing="ease-in-sine">
+          <div
+            class="px-6 lg:px-0 lg:pr-4 lg:pt-0"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
                 About Us
@@ -429,142 +582,7 @@
                 <a
                   href="#"
                   class="text-lg font-medium leading-6 text-white bg-[#ff6600] px-6 py-4"
-                  >Get Started</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="service" class="bg-white py-24">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto lg:mx-0"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-offset="50"
-              data-aos-easing="ease-in-sine">
-          <p class="text-base font-semibold leading-7 text-[#ff6600]">
-            Our Service
-          </p>
-          <div class="flex items-baseline">
-            <h2
-              class="mt-2 text-3xl w-full sm:w-2/5 font-bold tracking-tight text-gray-900 sm:text-6xl"
-            >
-              What Services We're Offering
-            </h2>
-            <p class="mt-6 w-3/5 text-lg leading-8 text-gray-500 hidden">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
-              hic ullam earum doloremque quo quia quae sapiente architecto quasi
-              consectetur voluptates asperiores, ex dolores eveniet possimus ab!
-              Natus, ullam laudantium.
-            </p>
-          </div>
-        </div>
-        <div
-          class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-3 lg:items-center"
-        >
-          <div class="col-span-2 mt-8 sm:mt-16 grid grid-cols-1 divide-y"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine">
-            <div>
-              <h1
-                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
-              >
-                Consulting Services in Public Policy
-              </h1>
-            </div>
-            <div>
-              <h1
-                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
-              >
-                3rd Party Researchers, Surveyors, and Data Providers
-              </h1>
-            </div>
-            <div>
-              <h1
-                class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
-              >
-                Advisory Services from Experts and Thought Leaders
-              </h1>
-            </div>
-          </div>
-          <div class="relative mt-20">
-            <div class="">
-              <div class="flex flex-col space-y-8">
-                <div class="relative">
-                  <div
-                    aria-hidden="true"
-                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
-                      data-aos="fade-left"
-                      data-aos-duration="1300"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                  >
-                    <svg
-                      class="absolute left-1/2 -top-9 -ml-3 lg:-right-10 lg:left-auto"
-                      width="108"
-                      height="105"
-                      fill="none"
-                      viewBox="0 0 108 105"
-                    >
-                      <defs>
-                        <pattern
-                          id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
-                          x="0"
-                          y="0"
-                          width="20"
-                          height="20"
-                          patternUnits="userSpaceOnUse"
-                        >
-                          <rect
-                            x="0"
-                            y="0"
-                            width="4"
-                            height="4"
-                            class="text-[#ff6600]"
-                            fill="currentColor"
-                          />
-                        </pattern>
-                      </defs>
-                      <rect
-                        width="404"
-                        height="392"
-                        fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    aria-hidden="true"
-                    class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
-                    data-aos-offset="100"
-                    data-aos-easing="ease-in-sine"
-                  >
-                    <div
-                      class="absolute right-1/2 -bottom-9 -ml-3 lg:right-32 lg:left-auto w-64 h-64 bg-[#ff6600]"
-                    ></div>
-                  </div>
-                  <div
-                    class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
-                    data-aos="fade-left"
-                    data-aos-duration="1100"
-                    data-aos-offset="100"
-                    data-aos-easing="ease-in-sine"
-                  >
-                    <div class="relative overflow-hidden pb-10 pt-64">
-                      <img
-                        class="absolute inset-0 h-full w-full object-cover"
-                        src="https://images.unsplash.com/photo-1587089879249-87bf7d2972df?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
+                >Get Started</a>
               </div>
             </div>
           </div>
@@ -576,19 +594,21 @@
       <div
         class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8"
       >
-        <div class="relative sm:py-16 lg:py-0"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="0"
-              data-aos-delay="200"
-              data-aos-easing="ease-in-sine">
+        <div
+          class="relative sm:py-16 lg:py-0"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="0"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
+        >
           <div
             aria-hidden="true"
             class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
             <div
               class="absolute inset-y-0 right-1/2 w-full bg-[#ff6600]/20 lg:right-72"
-            ></div>
+            />
             <svg
               class="absolute left-1/2 top-8 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
               width="404"
@@ -630,7 +650,7 @@
                 class="absolute inset-0 h-full w-full object-cover"
                 src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
-              />
+              >
               <div class="relative px-8">
                 <blockquote class="mt-8 invisible">
                   <div class="relative text-2xl text-white md:flex-grow">
@@ -653,11 +673,13 @@
 
         <div class="mt-16 sm:mt-0 relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-[#ff6600]"
+            <h2
+              class="text-base font-semibold leading-7 text-[#ff6600]"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-offset="0"
-              data-aos-easing="ease-in-sine">
+              data-aos-easing="ease-in-sine"
+            >
               Why Choose Us
             </h2>
             <p
@@ -670,12 +692,14 @@
               Why You Should Choose LensaGaruda
             </p>
             <dl class="mt-5 grid grid-cols-1 gap-2">
-              <div class="py-2"
+              <div
+                class="py-2"
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-offset="100"
                 data-aos-delay="100"
-                data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine"
+              >
                 <dd
                   class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
                 >
@@ -687,12 +711,14 @@
                   the world
                 </dt>
               </div>
-              <div class="py-2"
+              <div
+                class="py-2"
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-offset="100"
                 data-aos-delay="200"
-                data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine"
+              >
                 <dd
                   class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
                 >
@@ -704,12 +730,14 @@
                   various perspectives.
                 </dt>
               </div>
-              <div class="py-2"
+              <div
+                class="py-2"
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-offset="100"
                 data-aos-delay="300"
-                data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine"
+              >
                 <dd
                   class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
                 >
@@ -721,12 +749,14 @@
                   for the government in carry out policy execution
                 </dt>
               </div>
-              <div class="py-2"
+              <div
+                class="py-2"
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-offset="-20"
                 data-aos-delay="400"
-                data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine"
+              >
                 <dd
                   class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
                 >
@@ -746,11 +776,13 @@
 
     <div id="project" class="bg-white py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto lg:mx-0"
+        <div
+          class="mx-auto lg:mx-0"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-offset="50"
-          data-aos-easing="ease-in-sine">
+          data-aos-easing="ease-in-sine"
+        >
           <p class="text-base font-semibold leading-7 text-[#ff6600]">
             Our Projects
           </p>
@@ -767,21 +799,91 @@
             </p>
           </div>
         </div>
-        <div
+        <!-- <div
           class="mt-16 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3 lg:items-center px-1"
-        >
-          <article class="flex flex-col items-start justify-between"
+        > -->
+        <dl class="mt-16 grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <div class="flex flex-col">
+            <dt class="text-lg font-bold leading-7 text-gray-900">
+              <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500">
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                </svg>
+              </div>
+              Unlimited inboxes
+            </dt>
+            <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
+              <p class="flex-auto">
+                Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.
+              </p>
+            </dd>
+          </div>
+          <div class="flex flex-col">
+            <dt class="text-lg font-bold leading-7 text-gray-900">
+              <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500">
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                </svg>
+              </div>
+              Manage team members
+            </dt>
+            <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
+              <p class="flex-auto">
+                Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.
+              </p>
+            </dd>
+          </div>
+          <div class="flex flex-col">
+            <dt class="text-lg font-bold leading-7 text-gray-900">
+              <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500">
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                </svg>
+              </div>
+              Spam report
+            </dt>
+            <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
+              <p class="flex-auto">
+                Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.
+              </p>
+            </dd>
+          </div>
+        </dl>
+        <!-- <article
+            class="flex flex-col items-start justify-between"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-offset="0"
             data-aos-delay="200"
-            data-aos-easing="ease-in-sine">
+            data-aos-easing="ease-in-sine"
+          >
             <div class="relative w-full">
               <img
                 src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-              />
+              >
             </div>
             <div class="max-w-xl">
               <div class="group relative">
@@ -795,18 +897,20 @@
               </div>
             </div>
           </article>
-          <article class="flex flex-col items-start justify-between"
+          <article
+            class="flex flex-col items-start justify-between"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-offset="0"
             data-aos-delay="400"
-            data-aos-easing="ease-in-sine">
+            data-aos-easing="ease-in-sine"
+          >
             <div class="relative w-full">
               <img
                 src="https://images.unsplash.com/photo-1535978115060-d01ae6702684?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-              />
+              >
             </div>
             <div class="max-w-xl">
               <div class="group relative">
@@ -820,18 +924,20 @@
               </div>
             </div>
           </article>
-          <article class="flex flex-col items-start justify-between"
+          <article
+            class="flex flex-col items-start justify-between"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-offset="0"
             data-aos-delay="600"
-            data-aos-easing="ease-in-sine">
+            data-aos-easing="ease-in-sine"
+          >
             <div class="relative w-full">
               <img
                 src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-              />
+              >
             </div>
             <div class="max-w-xl">
               <div class="group relative">
@@ -844,18 +950,20 @@
                 </p>
               </div>
             </div>
-          </article>
-        </div>
+          </article> -->
+        <!-- </div> -->
       </div>
     </div>
 
     <div id="teams" class="bg-gray-900 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <div class="mx-auto max-w-2xl"
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class=""
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-offset="50"
-          data-aos-easing="ease-in-sine">
+          data-aos-easing="ease-in-sine"
+        >
           <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
             Our Team
           </h2>
@@ -868,21 +976,193 @@
         </div>
         <ul
           role="list"
-          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          class="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
-          <li class="relative group h-96 overflow-hidden bg-gray-800"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
-          data-aos-delay="200"
-          data-aos-easing="ease-in-sine">
+          <li
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+            class="flex flex-col gap-6 pt-12 sm:flex-row"
+          >
+            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="max-w-xl flex-auto">
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
+                Ansy Alghasi
+              </h3>
+              <p class="text-base leading-6 text-gray-600">
+                CEO
+              </p>
+              <p class="text-base leading-7 text-gray-600">
+                Universitas Bandung
+              </p>
+              <ul role="list" class="mt-4 flex items-center gap-x-6">
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">X</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine"
+            class="flex flex-col gap-6 pt-12 sm:flex-row"
+          >
+            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="max-w-xl flex-auto">
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
+                Ansy Alghasi
+              </h3>
+              <p class="text-base leading-6 text-gray-600">
+                CEO
+              </p>
+              <p class="text-base leading-7 text-gray-600">
+                Universitas Bandung
+              </p>
+              <ul role="list" class="mt-4 flex items-center gap-x-6">
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">X</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine"
+            class="flex flex-col gap-6 pt-12 sm:flex-row"
+          >
+            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="max-w-xl flex-auto">
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
+                Ansy Alghasi
+              </h3>
+              <p class="text-base leading-6 text-gray-600">
+                CEO
+              </p>
+              <p class="text-base leading-7 text-gray-600">
+                Universitas Bandung
+              </p>
+              <ul role="list" class="mt-4 flex items-center gap-x-6">
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">X</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- <li
+            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Ansy Alghasi
               </h3>
-              <p class="text-sm leading-6 text-gray-400">CEO</p>
+              <p class="text-sm leading-6 text-gray-400">
+                CEO
+              </p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -891,11 +1171,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            />
+            >
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60"></div>
+              <div class="absolute w-full h-96 bg-black opacity-60" />
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -952,19 +1232,23 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
-          data-aos-delay="400"
-          data-aos-easing="ease-in-sine">
+          <li
+            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Megawati
               </h3>
-              <p class="text-sm leading-6 text-gray-400">CMO</p>
+              <p class="text-sm leading-6 text-gray-400">
+                CMO
+              </p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -973,11 +1257,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            />
+            >
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60"></div>
+              <div class="absolute w-full h-96 bg-black opacity-60" />
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -1034,19 +1318,23 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
-          data-aos-delay="600"
-          data-aos-easing="ease-in-sine">
+          <li
+            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl w-32 text-left font-bold leading-7 tracking-tight text-white"
               >
                 Fitri N. Anggraeni
               </h3>
-              <p class="text-sm leading-6 text-gray-400">Senior Designer</p>
+              <p class="text-sm leading-6 text-gray-400">
+                Senior Designer
+              </p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -1055,11 +1343,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            />
+            >
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60"></div>
+              <div class="absolute w-full h-96 bg-black opacity-60" />
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -1115,39 +1403,213 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
 
-    <div class="bg-gray-900 pb-24">
-      <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <div class="mx-auto max-w-2xl"
+    <div class="bg-gray-900 pb-40">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class=""
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-offset="50"
-          data-aos-easing="ease-in-sine">
+          data-aos-easing="ease-in-sine"
+        >
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Meet Our Commissioner
           </h2>
         </div>
         <ul
           role="list"
-          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          class="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
-          <li class="relative group h-96 overflow-hidden bg-gray-800"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
-          data-aos-delay="200"
-          data-aos-easing="ease-in-sine">
+          <li
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+            class="flex flex-col gap-6 pt-12 sm:flex-row"
+          >
+            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="max-w-xl flex-auto">
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
+                Ansy Alghasi
+              </h3>
+              <p class="text-base leading-6 text-gray-600">
+                CEO
+              </p>
+              <p class="text-base leading-7 text-gray-600">
+                Universitas Bandung
+              </p>
+              <ul role="list" class="mt-4 flex items-center gap-x-6">
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">X</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine"
+            class="flex flex-col gap-6 pt-12 sm:flex-row"
+          >
+            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="max-w-xl flex-auto">
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
+                Ansy Alghasi
+              </h3>
+              <p class="text-base leading-6 text-gray-600">
+                CEO
+              </p>
+              <p class="text-base leading-7 text-gray-600">
+                Universitas Bandung
+              </p>
+              <ul role="list" class="mt-4 flex items-center gap-x-6">
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">X</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine"
+            class="flex flex-col gap-6 pt-12 sm:flex-row"
+          >
+            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="max-w-xl flex-auto">
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
+                Ansy Alghasi
+              </h3>
+              <p class="text-base leading-6 text-gray-600">
+                CEO
+              </p>
+              <p class="text-base leading-7 text-gray-600">
+                Universitas Bandung
+              </p>
+              <ul role="list" class="mt-4 flex items-center gap-x-6">
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">X</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- <li
+            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Ansy Alghasi
               </h3>
-              <p class="text-sm leading-6 text-gray-400">CEO</p>
+              <p class="text-sm leading-6 text-gray-400">
+                CEO
+              </p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -1156,11 +1618,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            />
+            >
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60"></div>
+              <div class="absolute w-full h-96 bg-black opacity-60" />
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -1217,19 +1679,23 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
-          data-aos-delay="400"
-          data-aos-easing="ease-in-sine">
+          <li
+            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
               >
                 Megawati
               </h3>
-              <p class="text-sm leading-6 text-gray-400">CMO</p>
+              <p class="text-sm leading-6 text-gray-400">
+                CMO
+              </p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -1238,11 +1704,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            />
+            >
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60"></div>
+              <div class="absolute w-full h-96 bg-black opacity-60" />
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -1299,19 +1765,23 @@
               </ul>
             </div>
           </li>
-          <li class="relative group h-96 overflow-hidden bg-gray-800"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
-          data-aos-delay="600"
-          data-aos-easing="ease-in-sine">
+          <li
+            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="50"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
               <h3
                 class="text-2xl w-32 text-left font-bold leading-7 tracking-tight text-white"
               >
                 Fitri N. Anggraeni
               </h3>
-              <p class="text-sm leading-6 text-gray-400">Senior Designer</p>
+              <p class="text-sm leading-6 text-gray-400">
+                Senior Designer
+              </p>
               <p class="text-sm font-medium leading-6 text-gray-400">
                 Universitas Bandung
               </p>
@@ -1320,11 +1790,11 @@
               class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
               src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
               alt=""
-            />
+            >
             <div
               class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
             >
-              <div class="absolute w-full h-96 bg-black opacity-60"></div>
+              <div class="absolute w-full h-96 bg-black opacity-60" />
               <ul
                 role="list"
                 class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
@@ -1380,7 +1850,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -1410,7 +1880,7 @@
           <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div
               class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden lg:w-1/2"
-            ></div>
+            />
 
             <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
               Let’s Talk
@@ -1469,8 +1939,7 @@
                     class="hover:text-gray-900"
                     href="https://api.whatsapp.com/send?phone=6281314626624&text=Halo Lensa Garuda Nusantara"
                     target="_blank"
-                    >+6281 314 626 624 (Ansy)</a
-                  >
+                  >+6281 314 626 624 (Ansy)</a>
                 </dd>
               </div>
               <div class="flex gap-x-4">
@@ -1495,8 +1964,7 @@
                   <a
                     class="hover:text-gray-900"
                     href="mailto:lensa.garuda@gmail.com"
-                    >lensa.garuda@gmail.com</a
-                  >
+                  >lensa.garuda@gmail.com</a>
                 </dd>
               </div>
             </dl>
@@ -1518,63 +1986,59 @@
                 <label
                   for="name"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                  >Name</label
-                >
+                >Name</label>
                 <div class="mt-2.5">
                   <input
+                    id="name"
                     type="name"
                     name="name"
-                    id="name"
                     autocomplete="name"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
+                  >
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="email"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                  >Email</label
-                >
+                >Email</label>
                 <div class="mt-2.5">
                   <input
+                    id="email"
                     type="email"
                     name="email"
-                    id="email"
                     autocomplete="email"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
+                  >
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="phone-number"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                  >Phone number</label
-                >
+                >Phone number</label>
                 <div class="mt-2.5">
                   <input
+                    id="phone-number"
                     type="tel"
                     name="phone-number"
-                    id="phone-number"
                     autocomplete="tel"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
+                  >
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="message"
                   class="block text-sm font-semibold leading-6 text-gray-900"
-                  >Message</label
-                >
+                >Message</label>
                 <div class="mt-2.5">
                   <textarea
-                    name="message"
                     id="message"
+                    name="message"
                     rows="4"
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  ></textarea>
+                  />
                 </div>
               </div>
             </div>
@@ -1591,12 +2055,16 @@
       </div>
     </div>
 
-    <footer class="bg-gray-900"
+    <footer
+      class="bg-gray-900"
       aria-labelledby="footer-heading"
       data-aos="fade-up"
       data-aos-duration="800"
-      data-aos-easing="ease-out-cubic">
-      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      data-aos-easing="ease-out-cubic"
+    >
+      <h2 id="footer-heading" class="sr-only">
+        Footer
+      </h2>
       <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 lg:px-8">
         <p class="text-center mx-auto text-4xl text-white">
           Please feel free to get in touch with us
@@ -1652,8 +2120,7 @@
                   class="hover:text-[#ff6600]"
                   href="https://api.whatsapp.com/send?phone=6281314626624&text=Halo Lensa Garuda Nusantara"
                   target="_blank"
-                  >+6281 314 626 624 (Ansy)</a
-                >
+                >+6281 314 626 624 (Ansy)</a>
               </dd>
             </div>
             <div class="flex gap-x-4 text-gray-300">
@@ -1678,8 +2145,7 @@
                 <a
                   class="hover:text-[#ff6600]"
                   href="mailto:lensa.garuda@gmail.com"
-                  >lensa.garuda@gmail.com</a
-                >
+                >lensa.garuda@gmail.com</a>
               </dd>
             </div>
           </dl>
