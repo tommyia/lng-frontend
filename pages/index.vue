@@ -53,7 +53,7 @@
             <a
               href="#why"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Why LGN?</a>
+            >Why LGN</a>
             <a
               href="#teams"
               class="text-sm font-semibold leading-6 text-gray-900"
@@ -67,7 +67,7 @@
             <a
               href="#"
               class="text-sm font-semibold leading-6 text-white bg-[#ff6600] px-4 py-2"
-            >Let's Talk <span aria-hidden="true">&rarr;</span></a>
+            >Contact Us <span aria-hidden="true">&rarr;</span></a>
           </div>
           <div class="absolute bottom-0 w-full h-0.5 bg-[#ff6600] sm:hidden" style="background: linear-gradient(90deg, rgba(255, 102, 0, 0) 0%, rgba(255, 102, 0, 0.52) 51.5%, rgba(255, 102, 0, 0) 100%); opacity: 1;" />
         </nav>
@@ -112,27 +112,31 @@
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a
-                    href="#"
+                    href="#aboutus"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Product</a>
+                  >About Us</a>
                   <a
-                    href="#"
+                    href="#service"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Features</a>
+                  >Service</a>
                   <a
-                    href="#"
+                    href="#why"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Marketplace</a>
+                  >Why LGN</a>
                   <a
-                    href="#"
+                    href="#teams"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Company</a>
+                  >Teams</a>
+                  <a
+                    href="#client"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Clients</a>
                 </div>
                 <div class="py-6">
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Log in</a>
+                  >Contact Us </a>
                 </div>
               </div>
             </div>
@@ -142,32 +146,28 @@
 
       <div class="relative isolate">
         <div
-          class="mt-32 sm:mt-24 mx-auto max-w-7xl px-6 py-4 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-10"
+          class="mt-32 sm:mt-24 mx-auto max-w-7xl px-6 py-4 sm:py-32 lg:grid lg:grid-cols-9 lg:items-baseline lg: lg:gap-x-0 lg:px-0 lg:py-10"
         >
-          <div class="col-span-6 mx-auto lg:mx-0 lg:flex-auto">
-            <h1
-              class="text-4xl font-bold tracking-tight text-gray-900 text-center sm:text-left sm:text-7xl mr-4"
-              data-aos="fade-right"
-              data-aos-easing="ease-in-sine"
-            >
-              Intelligent Solution for Higher Quality
-              <span class="text-[#ff6600]">Policy</span>
-            </h1>
-          </div>
-          <div class="mt-6 sm:mt-0 relative col-span-3 mx-auto lg:mx-0">
-            <h1
-              class="text-xl font-normal tracking-tight text-gray-900 sm:text-3xl text-center sm:text-left absolute inset-0"
-              data-aos="fade-left"
-              data-aos-easing="ease-in-sine"
-            >
-              A tailor-made service. We have the people you need.
-            </h1>
-          </div>
+          <h1
+            class="col-span-6 text-4xl font-bold tracking-tight text-gray-900 text-center sm:text-left sm:text-7xl mr-4"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+          >
+            Intelligent Solutions for Higher Quality
+            <span class="text-[#ff6600]">Policy</span>
+          </h1>
+          <h1
+            class="mt-6 sm:mt-0 relative col-span-3 h-full text-xl font-normal tracking-tight text-gray-900 sm:text-2xl text-center sm:text-left"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+          >
+            A tailor-made service, delivered by best-in-class academics, researchers, consultants, and analysts that suit your needs.
+          </h1>
         </div>
         <div
           class="mt-8 sm:mt-0 mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
         >
-          <div class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex">
+          <div class="col-span-5 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex">
             <img
               class="w-full h-56 object-cover"
               data-aos="fade-right"
@@ -178,14 +178,14 @@
             >
           </div>
           <div
-            class="relative h-full col-span-3 mx-auto lg:mx-0 sm:bg-[#ff6600]"
+            class="relative h-full col-span-4 mx-auto lg:mx-0 sm:bg-[#ff6600]"
             data-aos="fade-left"
             data-aos-offset="300"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
           >
-            <div class="grid grid-cols-2 h-full">
-              <div class="col-span-2 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+            <div class="grid grid-cols-3 h-full">
+              <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
                 <h3 class="text-4xl font-bold">
                   40+
                 </h3>
@@ -193,12 +193,20 @@
                   Company Clients of Fellows LGN
                 </h3>
               </div>
-              <div class="col-span-2 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+              <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
                 <h3 class="text-4xl font-bold">
                   7+
                 </h3>
                 <h3 class="mt-2 leading-5 font-medium sm:font-normal">
                   Recent <br>Portfolios
+                </h3>
+              </div>
+              <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+                <h3 class="text-4xl font-bold">
+                  15+
+                </h3>
+                <h3 class="mt-2 leading-5 font-medium sm:font-normal">
+                  Excellent LPDP Alumni
                 </h3>
               </div>
             </div>
@@ -570,19 +578,22 @@
               <p
                 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
               >
-                Deliver a higher quality of policies & peace of mind
+                Strategy to Policy, Complexity to Simplicity
               </p>
               <p class="mt-6 text-lg text-gray-600">
-                Integrity, synergy, innovation and happiness are our core values
-                in running Lensa Garuda Nusantara (LGN). It is our identities in
-                delivering our best service with nation’s pride and
-                international standards.
+                Our values underpin our commitment to delivering exceptional service, characterized by national pride and adherence to international standards:
               </p>
-              <div class="mt-8">
+              <ol class="mt-4 list-disc list-inside text-lg text-gray-600">
+                <li>Customer Centricity</li>
+                <li>Integrity</li>
+                <li>Synergy</li>
+                <li>Innovation</li>
+              </ol>
+              <div class="mt-10">
                 <a
                   href="#"
                   class="text-lg font-medium leading-6 text-white bg-[#ff6600] px-6 py-4"
-                >Get Started</a>
+                >Contact Us</a>
               </div>
             </div>
           </div>
@@ -592,7 +603,7 @@
 
     <div id="why" class="relative mt-32 mb-32">
       <div
-        class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8"
+        class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8"
       >
         <div
           class="relative sm:py-16 lg:py-0"
@@ -706,9 +717,7 @@
                   01
                 </dd>
                 <dt class="text-lg font-normal text-gray-900">
-                  LGN's greatest asset is its researchers who are graduates or
-                  students from various leading universities in Indonesia and
-                  the world
+                  Our greatest asset is its LPDP awardee fellows from top global universities, dedicated to addressing the nation's challenges.
                 </dt>
               </div>
               <div
@@ -725,9 +734,7 @@
                   02
                 </dd>
                 <dt class="text-lg font-normal text-gray-900">
-                  LGN has diverse backgrounds ranging from the corporate world
-                  to bureaucrats so that they can compile studies that involve
-                  various perspectives.
+                  Our deliverables are both academical and practical, providing policy recommendations that ease the government in effective policy formulation and execution.
                 </dt>
               </div>
               <div
@@ -744,28 +751,7 @@
                   03
                 </dd>
                 <dt class="text-lg font-normal text-gray-900">
-                  LGN's research is not only academic in nature but is oriented
-                  towards practical policy recommendations that are more useful
-                  for the government in carry out policy execution
-                </dt>
-              </div>
-              <div
-                class="py-2"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-offset="-20"
-                data-aos-delay="400"
-                data-aos-easing="ease-in-sine"
-              >
-                <dd
-                  class="mt-1 text-3xl font-semibold tracking-tight text-[#ff6600]"
-                >
-                  04
-                </dd>
-                <dt class="text-lg font-normal text-gray-900">
-                  All LGN researchers are LPDP awardees. who are the best sons
-                  and daughters of the nation who strongly committed to
-                  contributing to solving the nation's various challenges
+                  Our extensive intellectual properties and expert networks benefit from our leadership's diverse backgrounds, including corporate and bureaucratic experience.
                 </dt>
               </div>
             </dl>
@@ -803,21 +789,19 @@
           class="mt-16 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3 lg:items-center px-1"
         > -->
         <dl class="mt-16 grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-          <div class="flex flex-col">
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+          >
             <dt class="text-lg font-bold leading-7 text-gray-900">
-              <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500">
-                <svg
-                  class="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
-                </svg>
+              <div class="mb-2 flex h-24 w-24 items-center justify-center rounded-lg">
+                <img src="BKPM.png" class="">
               </div>
-              Unlimited inboxes
+              Rencana Aksi Nasional Hilirisasi Investasi Strategi Tahun Anggaran 2023
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
@@ -825,21 +809,19 @@
               </p>
             </dd>
           </div>
-          <div class="flex flex-col">
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-sine"
+          >
             <dt class="text-lg font-bold leading-7 text-gray-900">
-              <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500">
-                <svg
-                  class="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                </svg>
+              <div class="mb-2 flex h-24 w-24 items-center justify-center rounded-lg">
+                <img src="BKPM.png" class="">
               </div>
-              Manage team members
+              Kajian Kebijakan Penanaman Modal mengenai Dampak Survey Kemudahan Berusaha terhadap Arus Foreign Direct Investment di Negara-Negara Berkembang
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
@@ -847,21 +829,19 @@
               </p>
             </dd>
           </div>
-          <div class="flex flex-col">
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-sine"
+          >
             <dt class="text-lg font-bold leading-7 text-gray-900">
-              <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500">
-                <svg
-                  class="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                </svg>
+              <div class="mb-2 flex h-24 w-24 p-4 items-center justify-center rounded-lg">
+                <img src="kpo.png" class="">
               </div>
-              Spam report
+              Kajian Menuju Muda-mudi Indonesia Sehat Mental
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
@@ -988,16 +968,13 @@
           >
             <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <div class="max-w-xl flex-auto">
-              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
+              <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Ansy Alghasi
               </h3>
-              <p class="text-base leading-6 text-gray-600">
+              <p class="text-lg leading-6 text-gray-400">
                 CEO
               </p>
-              <p class="text-base leading-7 text-gray-600">
-                Universitas Bandung
-              </p>
-              <ul role="list" class="mt-4 flex items-center gap-x-6">
+              <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
                   <a href="#" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
@@ -1044,16 +1021,13 @@
           >
             <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <div class="max-w-xl flex-auto">
-              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
-                Ansy Alghasi
+              <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
+                Megawanti
               </h3>
-              <p class="text-base leading-6 text-gray-600">
-                CEO
+              <p class="text-lg leading-6 text-gray-400">
+                Policy & Research Director
               </p>
-              <p class="text-base leading-7 text-gray-600">
-                Universitas Bandung
-              </p>
-              <ul role="list" class="mt-4 flex items-center gap-x-6">
+              <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
                   <a href="#" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
@@ -1100,16 +1074,13 @@
           >
             <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <div class="max-w-xl flex-auto">
-              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
-                Ansy Alghasi
+              <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
+                Fitri N. Anggraeni
               </h3>
-              <p class="text-base leading-6 text-gray-600">
-                CEO
+              <p class="text-lg leading-6 text-gray-400">
+                Marketing & Communication Director
               </p>
-              <p class="text-base leading-7 text-gray-600">
-                Universitas Bandung
-              </p>
-              <ul role="list" class="mt-4 flex items-center gap-x-6">
+              <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
                   <a href="#" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
@@ -1435,16 +1406,13 @@
           >
             <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <div class="max-w-xl flex-auto">
-              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
-                Ansy Alghasi
+              <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
+                Yosua Yosafat Andre
               </h3>
-              <p class="text-base leading-6 text-gray-600">
-                CEO
+              <p class="text-lg leading-6 text-gray-400">
+                Commissioner
               </p>
-              <p class="text-base leading-7 text-gray-600">
-                Universitas Bandung
-              </p>
-              <ul role="list" class="mt-4 flex items-center gap-x-6">
+              <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
                   <a href="#" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
@@ -1491,16 +1459,13 @@
           >
             <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <div class="max-w-xl flex-auto">
-              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
-                Ansy Alghasi
+              <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
+                M. Diaz Alichsan
               </h3>
-              <p class="text-base leading-6 text-gray-600">
-                CEO
+              <p class="text-lg leading-6 text-gray-400">
+                Independent Commissioner
               </p>
-              <p class="text-base leading-7 text-gray-600">
-                Universitas Bandung
-              </p>
-              <ul role="list" class="mt-4 flex items-center gap-x-6">
+              <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
                   <a href="#" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
@@ -1547,16 +1512,13 @@
           >
             <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             <div class="max-w-xl flex-auto">
-              <h3 class="text-lg font-semibold leading-8 tracking-tight text-white">
-                Ansy Alghasi
+              <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
+                Asep Cahyana
               </h3>
-              <p class="text-base leading-6 text-gray-600">
-                CEO
+              <p class="text-lg leading-6 text-gray-400">
+                Commissioner
               </p>
-              <p class="text-base leading-7 text-gray-600">
-                Universitas Bandung
-              </p>
-              <ul role="list" class="mt-4 flex items-center gap-x-6">
+              <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
                   <a href="#" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">Instagram</span>
@@ -1888,9 +1850,6 @@
             <h2 class="text-3xl font-bold tracking-tight text-gray-900">
               Get In Touch With Us
             </h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600">
-              Let’s create higher quality of policy and analysis with LGN.
-            </p>
             <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div class="flex gap-x-4">
                 <dt class="flex-none">
