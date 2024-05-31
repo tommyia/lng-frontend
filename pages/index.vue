@@ -778,7 +778,7 @@
             >
               Discover Our Selected Projects
             </h2>
-            <p class="mt-6 sm:pl-20 sm:w-3/5 text-lg leading-8 text-gray-500">
+            <p class="mt-6 sm:pl-20 sm:w-3/5 text-lg leading-8 text-gray-500 hidden">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
               hic ullam earum doloremque quo quia quae sapiente architecto quasi
               consectetur voluptates asperiores, ex dolores eveniet possimus ab!
@@ -805,7 +805,7 @@
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
-                Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.
+                Investment is the key to achieving industrial downstreaming in Indonesia, with varying impacts on different commodity industries; for instance, electric vehicle battery production investments significantly boost productivity more than nickel mining investments. This study aims to implement strategic programs outlined in the Roadmap for Strategic Investment Downstreaming and provide information for potential investors and stakeholders.
               </p>
             </dd>
           </div>
@@ -825,7 +825,7 @@
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
-                Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.
+                EoDB was suspended in 2021 due to transparency and methodology issues, but the World Bank is preparing a replacement called B-Ready; this study aims to understand the relationship between the ease of doing business (EoDB) survey and foreign direct investment (FDI).
               </p>
             </dd>
           </div>
@@ -845,7 +845,7 @@
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
-                Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.
+                Every Indonesian youth deserves protection from destructive influences like drug abuse, pornography, and other threats to national moral quality, as their role as moral strength, social control, and agents of change in national development is crucial. This study aims to prepare strong, mentally healthy human resources for a prosperous Indonesia in 2045.
               </p>
             </dd>
           </div>
@@ -966,13 +966,13 @@
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-6 pt-12 sm:flex-row"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/20240525_081357_aj-EvWwU3.jpg?updatedAt=1717155041086" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Ansy Alghasi
               </h3>
               <p class="text-lg leading-6 text-gray-400">
-                CEO
+                Managing Director
               </p>
               <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
@@ -1019,7 +1019,7 @@
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-6 pt-12 sm:flex-row"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Megawanti%20(1)_wehemVw1j.png?updatedAt=1717157144906" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Megawanti
@@ -1072,10 +1072,10 @@
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-6 pt-12 sm:flex-row"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="bg-gray-800 w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Fitria_FOzDGHp61.png?updatedAt=1717157420351" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
-                Fitri N. Anggraeni
+                ⁠Fitri N. Anggraeni
               </h3>
               <p class="text-lg leading-6 text-gray-400">
                 Marketing & Communication Director
@@ -1404,7 +1404,7 @@
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-6 pt-12 sm:flex-row"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Yosua_PKAU8ghqY.jpeg?updatedAt=1717155040139" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Yosua Yosafat Andre
@@ -1457,7 +1457,7 @@
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-6 pt-12 sm:flex-row"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Diaz_unjFVKy3Z.jpeg?updatedAt=1717155039298" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 M. Diaz Alichsan
@@ -1510,7 +1510,7 @@
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-6 pt-12 sm:flex-row"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Asep_T4WIVt9Mk.jpg?updatedAt=1717155048631" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Asep Cahyana
