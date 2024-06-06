@@ -1,3 +1,5 @@
+// import i18n from './i18n'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -33,8 +35,55 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/i18n'
+    // [
+    //   '@nuxtjs/i18n',
+    //   {
+    //     // baseUrl: `${process.env.WEBSITE_BASE_URL}`,
+    //     vueI18nLoader: true,
+    //     // strategy: 'prefix',
+    //     seo: true,
+    //     defaultLocale: 'en',
+    //     locales: [
+    //       {
+    //         code: 'en',
+    //         iso: 'en-US',
+    //         shortName: 'EN',
+    //         name: 'English'
+    //       },
+    //       {
+    //         code: 'id',
+    //         iso: 'id-ID',
+    //         shortName: 'ID',
+    //         name: 'Bahasa Indonesia'
+    //       }
+    //     ],
+    //     vueI18n: i18n
+    //   }
+    // ]
   ],
+
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
+      { code: 'id', iso: 'id-ID', file: 'id.json', name: 'Bahasa Indonesia' }
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'en'
+      // messages: {
+      //   en: {
+      //     welcome: 'Welcome'
+      //   },
+      //   id: {
+      //     welcome: 'Selamat Datang'
+      //   }
+      // }
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
