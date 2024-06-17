@@ -1,6 +1,6 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div>
+  <div class="overflow-x-hidden sm:overflow-x-clip">
     <div class="bg-white">
       <header class="absolute inset-x-0 top-0 z-50">
         <nav
@@ -21,6 +21,7 @@
             <button
               type="button"
               class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              @click="toggleMenu"
             >
               <span class="sr-only">Open main menu</span>
               <svg
@@ -72,24 +73,21 @@
           <div class="absolute bottom-0 w-full h-0.5 bg-[#ff6600] sm:hidden" style="background: linear-gradient(90deg, rgba(255, 102, 0, 0) 0%, rgba(255, 102, 0, 0.52) 51.5%, rgba(255, 102, 0, 0) 100%); opacity: 1;" />
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="hidden" role="dialog" aria-modal="true">
+        <div v-if="isMenuOpen" class="" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-50" />
           <div
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
           >
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
+            <div class="relative flex items-center justify-between">
+              <a href="/" class="-m-1.5 p-1.5 flex space-x-2 items-center">
                 <span class="sr-only">Your Company</span>
-                <img
-                  class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                >
+                <img src="lgn.png" class="w-auto h-10">
               </a>
               <button
                 type="button"
                 class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                @click="toggleMenu"
               >
                 <span class="sr-only">Close menu</span>
                 <svg
@@ -108,34 +106,40 @@
                 </svg>
               </button>
             </div>
-            <div class="mt-6 flow-root">
+            <div class="mx-2 mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a
                     href="#aboutus"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    @click="toggleMenu"
                   >About Us</a>
                   <a
                     href="#service"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    @click="toggleMenu"
                   >Service</a>
                   <a
                     href="#why"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    @click="toggleMenu"
                   >Why LGN</a>
                   <a
                     href="#teams"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    @click="toggleMenu"
                   >Teams</a>
                   <a
                     href="#client"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    @click="toggleMenu"
                   >Clients</a>
                 </div>
                 <div class="py-6">
                   <a
                     href="#"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    @click="toggleMenu"
                   >Contact Us </a>
                 </div>
               </div>
@@ -312,7 +316,7 @@
               </h1>
             </div>
           </div>
-          <div class="relative mt-20">
+          <div class="hidden sm:block relative mt-20">
             <div class="">
               <div class="flex flex-col space-y-8">
                 <div class="relative">
@@ -398,7 +402,7 @@
           class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center"
         >
           <div
-            class="relative mt-20"
+            class="hidden sm:block relative mt-20"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-offset="50"
@@ -606,7 +610,7 @@
         class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8"
       >
         <div
-          class="relative sm:py-16 lg:py-0"
+          class="hidden sm:block relative sm:py-16 lg:py-0"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-offset="0"
@@ -956,7 +960,7 @@
         </div>
         <ul
           role="list"
-          class="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          class="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-8"
         >
           <li
             data-aos="fade-up"
@@ -964,15 +968,18 @@
             data-aos-offset="50"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
-            class="flex flex-col gap-6 pt-12 sm:flex-row"
+            class="flex flex-col gap-4 pt-12"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/20240525_081357_aj-EvWwU3.jpg?updatedAt=1717155041086" alt="">
+            <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Ansy%20Alghasi_ga26aHAjq.png?updatedAt=1718317891730" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Ansy Alghasi
               </h3>
-              <p class="text-lg leading-6 text-gray-400">
+              <p class="text-lg leading-6 text-gray-50">
                 Managing Director
+              </p>
+              <p class="mt-2 text-lg leading-6 text-gray-400">
+                New South Wales University
               </p>
               <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
@@ -1017,15 +1024,18 @@
             data-aos-offset="50"
             data-aos-delay="400"
             data-aos-easing="ease-in-sine"
-            class="flex flex-col gap-6 pt-12 sm:flex-row"
+            class="flex flex-col gap-4 pt-12"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Megawanti%20(1)_wehemVw1j.png?updatedAt=1717157144906" alt="">
+            <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Megawanti_s_W36pCIEq1O.png?updatedAt=1718317891174" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Megawanti
               </h3>
-              <p class="text-lg leading-6 text-gray-400">
+              <p class="text-lg leading-6 text-gray-50">
                 Policy & Research Director
+              </p>
+              <p class="mt-2 text-lg leading-6 text-gray-400">
+                Wageningen University
               </p>
               <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
@@ -1070,15 +1080,18 @@
             data-aos-offset="50"
             data-aos-delay="600"
             data-aos-easing="ease-in-sine"
-            class="flex flex-col gap-6 pt-12 sm:flex-row"
+            class="flex flex-col gap-4 pt-12"
           >
-            <img class="bg-gray-800 w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Fitria_FOzDGHp61.png?updatedAt=1717157420351" alt="">
+            <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Fitri%20N.%20Anggraeni_square_q0sjPT-3l.png?updatedAt=1718317889800" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 ⁠Fitri N. Anggraeni
               </h3>
-              <p class="text-lg leading-6 text-gray-400">
+              <p class="text-lg leading-6 text-gray-50">
                 Marketing & Communication Director
+              </p>
+              <p class="mt-2 text-lg leading-6 text-gray-400">
+                Institut Teknologi Bandung
               </p>
               <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
@@ -1402,15 +1415,18 @@
             data-aos-offset="50"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
-            class="flex flex-col gap-6 pt-12 sm:flex-row"
+            class="flex flex-col gap-4 pt-12"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Yosua_PKAU8ghqY.jpeg?updatedAt=1717155040139" alt="">
+            <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Yosua%20Yosafat%20Andre_k8HiFC0Pa.png?updatedAt=1718317891862" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Yosua Yosafat Andre
               </h3>
-              <p class="text-lg leading-6 text-gray-400">
+              <p class="text-lg leading-6 text-gray-50">
                 Commissioner
+              </p>
+              <p class="mt-2 text-lg leading-6 text-gray-400">
+                Monash University
               </p>
               <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
@@ -1455,15 +1471,18 @@
             data-aos-offset="50"
             data-aos-delay="400"
             data-aos-easing="ease-in-sine"
-            class="flex flex-col gap-6 pt-12 sm:flex-row"
+            class="flex flex-col gap-4 pt-12"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Diaz_unjFVKy3Z.jpeg?updatedAt=1717155039298" alt="">
+            <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/M.%20Diaz%20Alichsan_0jlVxc8yx.png?updatedAt=1718317890669" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 M. Diaz Alichsan
               </h3>
-              <p class="text-lg leading-6 text-gray-400">
+              <p class="text-lg leading-6 text-gray-50">
                 Independent Commissioner
+              </p>
+              <p class="mt-2 text-lg leading-6 text-gray-400">
+                Erasmus University Rotterdam
               </p>
               <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
@@ -1508,15 +1527,18 @@
             data-aos-offset="50"
             data-aos-delay="600"
             data-aos-easing="ease-in-sine"
-            class="flex flex-col gap-6 pt-12 sm:flex-row"
+            class="flex flex-col gap-4 pt-12"
           >
-            <img class="w-32 h-32 flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Asep_T4WIVt9Mk.jpg?updatedAt=1717155048631" alt="">
+            <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Asep%20Cahyana_YA3FnSR7D.png?updatedAt=1718317891100" alt="">
             <div class="max-w-xl flex-auto">
               <h3 class="text-xl font-semibold leading-10 tracking-tight text-white">
                 Asep Cahyana
               </h3>
-              <p class="text-lg leading-6 text-gray-400">
+              <p class="text-lg leading-6 text-gray-50">
                 Commissioner
+              </p>
+              <p class="mt-2 text-lg leading-6 text-gray-400">
+                Universitas Gajah Mada
               </p>
               <ul role="list" class="mt-6 flex items-center gap-x-6">
                 <li>
@@ -1819,12 +1841,34 @@
 
     <div id="client" class="bg-white pt-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:max-w-none">
-          <h2 class="text-lg font-semibold leading-8 text-gray-900">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-sine"
+          class="mx-auto max-w-2xl lg:max-w-none"
+        >
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Trusted by the world’s most innovative teams
           </h2>
-
-          <Slider class="mt-8" />
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
+          class="mt-4"
+        >
+          <div class="relative overflow-hidden whitespace-nowrap">
+            <div class="inline-block animate-slide" :style="{ width: `${totalWidth}px` }">
+              <img v-for="(image, index) in extendedImages" :key="`image1-${index}`" :src="image" class="inline-block w-40 h-auto object-scale-down mx-4">
+            </div>
+            <div class="inline-block animate-slide" :style="{ width: `${totalWidth}px` }">
+              <img v-for="(image, index) in extendedImages" :key="`image2-${index}`" :src="image" class="inline-block w-40 h-auto object-scale-down mx-4">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1930,14 +1974,13 @@
           </div>
         </div>
         <form
-          action="#"
-          method="POST"
           class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
           data-aos="fade-left"
           data-aos-duration="800"
           data-aos-offset="50"
           data-aos-delay="200"
           data-aos-easing="ease-in-sine"
+          @submit.prevent="sendMessage"
         >
           <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -1949,39 +1992,10 @@
                 <div class="mt-2.5">
                   <input
                     id="name"
-                    type="name"
-                    name="name"
+                    v-model="name"
+                    type="text"
                     autocomplete="name"
-                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  >
-                </div>
-              </div>
-              <div class="sm:col-span-2">
-                <label
-                  for="email"
-                  class="block text-sm font-semibold leading-6 text-gray-900"
-                >Email</label>
-                <div class="mt-2.5">
-                  <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    autocomplete="email"
-                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  >
-                </div>
-              </div>
-              <div class="sm:col-span-2">
-                <label
-                  for="phone-number"
-                  class="block text-sm font-semibold leading-6 text-gray-900"
-                >Phone number</label>
-                <div class="mt-2.5">
-                  <input
-                    id="phone-number"
-                    type="tel"
-                    name="phone-number"
-                    autocomplete="tel"
+                    required
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   >
                 </div>
@@ -1994,8 +2008,10 @@
                 <div class="mt-2.5">
                   <textarea
                     id="message"
+                    v-model="message"
                     name="message"
                     rows="4"
+                    required
                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -2201,6 +2217,47 @@
 import AOS from 'aos'
 
 export default {
+  data () {
+    return {
+      images: [
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/The_Global_Fund_logo_khXQoYG3y.png?updatedAt=1718604689814',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/pemberdayaan-perempuan-perlindungan-anak-logo-40161DD34C-seeklogo.com_k8F32Nf4T.png?updatedAt=1718604688924',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/images%20(1)_yaE7crSka.png?updatedAt=1718604688378',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/1_QEps725rQjfgqNnlbRYb1g_wiF8CiFDq.png?updatedAt=1718604688316',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/Logo-Julius-Center_sf5jPRKt5.jpg?updatedAt=1718604688301',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/images%20(2)_myHoETpPD.png?updatedAt=1718604687370',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/Logo-Tengah-Stack-Up-1-510x510_n61KTgPLr.jpg?updatedAt=1718604687385',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/images%20(3)_CY7cZVpZC.png?updatedAt=1718604686599',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/brawijayaclinic-logo_GJeRp7cdH.jpg?updatedAt=1718604686178',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/images%20(1)_amNlPrJ2k.jpeg?updatedAt=1718604685707',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/images_mqAN6vBM5.jpeg?updatedAt=1718604685669',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/images%20(2)_lK93KTDdw.jpeg?updatedAt=1718604685334',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/logo-RSCM_YA-MiRLYt.png?updatedAt=1718604684925',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/kementrian%20bappenas_8kruqNpNC.png?updatedAt=1718604683915',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/transport%20for%20london_yz77mR0Pg.png?updatedAt=1718604683886',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/kementrian%20perindustrian_WT8dCIhMJ.png?updatedAt=1718604683817',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/kementrian%20pekerjaan%20umum%20dan%20perumahan%20rakyat_s3-KVlvrp.png?updatedAt=1718604683775',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/kominfo_NS6M2c1cO.jpg?updatedAt=1718604683341',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/kementrian%20pendayagunaan%20aparatur%20negara_M3DVM2Hb7.png?updatedAt=1718604683071',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/mind%20id_Hkb9O-f61.jpg?updatedAt=1718604682625',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/pemerintah%20kabupaten%20badung_PnZnjv7Oe.png?updatedAt=1718604682626',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/iigf_L5x606dSz.jpg?updatedAt=1718604682426',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/Logo_of_the_Ministry_of_Health_of_the_Republic_of_Indonesia_Z32rMI7bP.png?updatedAt=1718604681861',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/(Bukit_Asam)_Logo_CMYK-01_JzoIc22mz.png?updatedAt=1718604680413',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/AIC-logo_hQzgL9Z49.jpg?updatedAt=1718604680345',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/5de0e25144da7_20191129161809-1_5LTlWcfjj.png?updatedAt=1718604680345',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/logo-pln-ok_Gp9olJjM8.jpg?updatedAt=1718604680300',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/FREEPORT_cP6ouH7dF.jpg?updatedAt=1718604679564',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/Logo-Inalum-Operating-1_CvE8VsV95.png?updatedAt=1718604679042',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/Ristek-BRIN1_bU8FonwXw.jpg?updatedAt=1718604678978',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/images__UvI9khCw.png?updatedAt=1718604678755',
+        'https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/our%20client/Download-Logo-PT-Timah-PNG_7o1LMXLq1.png?updatedAt=1718604678318'
+      ],
+      name: '',
+      message: '',
+      isMenuOpen: false
+    }
+  },
   head () {
     return {
       link: [
@@ -2229,9 +2286,41 @@ export default {
       ]
     }
   },
+  computed: {
+    extendedImages () {
+      return [...this.images, ...this.images]
+    },
+    totalWidth () {
+      return this.extendedImages.length * 160
+    }
+  },
   mounted () {
-    AOS.init({
-    })
+    AOS.init({})
+  },
+  methods: {
+    sendMessage () {
+      const phoneNumber = '6281314626624'
+      const text = `hello! my name ${this.name}%0A, ${this.message}`
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`
+      window.open(whatsappUrl, '_blank')
+    },
+    toggleMenu () {
+      this.isMenuOpen = !this.isMenuOpen
+    }
   }
 }
 </script>
+<style>
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-slide {
+  display: inline-flex;
+  animation: slide 120s linear infinite;
+}
+</style>
