@@ -46,27 +46,91 @@
             <a
               href="#aboutus"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >About Us</a>
+            >{{ $t('menu_about_us') }}</a>
             <a
               href="#service"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Service</a>
+            >{{ $t('menu_service') }}</a>
             <a
               href="#why"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Why LGN</a>
+            >{{ $t('menu_why_lgn') }}</a>
             <a
               href="#teams"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Teams</a>
+            >{{ $t('menu_teams') }}</a>
             <a
               href="#client"
               class="text-sm font-semibold leading-6 text-gray-900"
-            >Client</a>
+            >{{ $t('menu_client') }}</a>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div class="relative mr-2">
+              <button
+                type="button"
+                class="relative p-2 hover:text-gray-800 text-left cursor-pointer focus:outline-none sm:text-sm lg:hover:bg-gray-100 ml-2"
+                aria-expanded="false"
+                aria-haspopup="true"
+                :aria-label="getLangShortName($i18n.locale)"
+                @click="() => { showLanguageSwitch = !showLanguageSwitch; showMenu = false; showProfile = false; showMobileSearch = false; searchState = 'init'; showSubMenu = false }"
+              >
+                <span class="flex items-center">
+                  <img :src="getLangImage($i18n.locale)" width="40" height="40" alt="Language Flag" class="flex-shrink-0 w-6 h-6 rounded-full">
+                  <span class="ml-3 font-semibold truncate block text-xs">
+                    {{ getLangShortName($i18n.locale) }}
+                  </span>
+                </span>
+              </button>
+
+              <ul
+                v-on-clickaway="() => showLanguageSwitch = false"
+                class="absolute right-0 z-50 py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg w-28 max-h-56 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+                tabindex="-1"
+                role="listbox"
+                aria-labelledby="listbox-label"
+                aria-activedescendant="listbox-option-3"
+                :class="showLanguageSwitch ? 'absolute' : 'hidden'"
+              >
+                <li
+                  class="relative py-2 pl-3 text-gray-900 cursor-pointer select-none pr-9 hover:bg-gray-100"
+                  role="option"
+                  @click="switchLanguage('id')"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="~/assets/images/id.svg"
+                      width="40"
+                      height="40"
+                      alt="Language Flag"
+                      class="flex-shrink-0 w-4 h-4 rounded-full"
+                    >
+                    <span class="block ml-3 truncate">
+                      ID
+                    </span>
+                  </div>
+                </li>
+                <li
+                  class="relative py-2 pl-3 text-gray-900 cursor-pointer select-none pr-9 hover:bg-gray-100"
+                  role="option"
+                  @click="switchLanguage('en')"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="~/assets/images/en.svg"
+                      width="40"
+                      height="40"
+                      alt="Language Flag"
+                      class="flex-shrink-0 w-4 h-4 rounded-full"
+                    >
+                    <span class="block ml-3 truncate">
+                      EN
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <a
-              href="#"
+              href="#contactus"
               class="text-sm font-semibold leading-6 text-white bg-[#ff6600] px-4 py-2"
             >Contact Us <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -79,8 +143,8 @@
           <div
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
           >
-            <div class="relative flex items-center justify-between">
-              <a href="/" class="-m-1.5 p-1.5 flex space-x-2 items-center">
+            <div class="flex items-center justify-between">
+              <a href="/" class="-m-1.5 p-1.5" @click="toggleMenu">
                 <span class="sr-only">Your Company</span>
                 <img src="lgn.png" class="w-auto h-10">
               </a>
@@ -106,41 +170,47 @@
                 </svg>
               </button>
             </div>
-            <div class="mx-2 mt-6 flow-root">
+            <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
                   <a
                     href="#aboutus"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     @click="toggleMenu"
-                  >About Us</a>
+                  >
+                    {{ $t('menu_about_us') }}
+                  </a>
                   <a
                     href="#service"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     @click="toggleMenu"
-                  >Service</a>
+                  >
+                    {{ $t('menu_service') }}
+                  </a>
                   <a
                     href="#why"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     @click="toggleMenu"
-                  >Why LGN</a>
+                  >
+                    {{ $t('menu_why_lgn') }}
+                  </a>
                   <a
                     href="#teams"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     @click="toggleMenu"
-                  >Teams</a>
+                  >{{ $t('menu_teams') }}</a>
                   <a
                     href="#client"
                     class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     @click="toggleMenu"
-                  >Clients</a>
+                  >{{ $t('menu_client') }}</a>
                 </div>
                 <div class="py-6">
                   <a
-                    href="#"
+                    href="#contactus"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     @click="toggleMenu"
-                  >Contact Us </a>
+                  >{{ $t('menu_contact_us') }}</a>
                 </div>
               </div>
             </div>
@@ -165,7 +235,7 @@
             data-aos="fade-left"
             data-aos-easing="ease-in-sine"
           >
-            A tailor-made service, delivered by best-in-class academics, researchers, consultants, and analysts that suit your needs.
+            {{ $t('header_description') }}
           </h1>
         </div>
         <div
@@ -194,7 +264,7 @@
                   40+
                 </h3>
                 <h3 class="mt-2 leading-5 font-medium sm:font-normal">
-                  Company Clients of Fellows LGN
+                  {{ $t('statistics_company_clients') }}
                 </h3>
               </div>
               <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
@@ -202,7 +272,7 @@
                   7+
                 </h3>
                 <h3 class="mt-2 leading-5 font-medium sm:font-normal">
-                  Recent <br>Portfolios
+                  {{ $t('statistics_recent_portfolios_1') }} <br>{{ $t('statistics_recent_portfolios_2') }}
                 </h3>
               </div>
               <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
@@ -210,7 +280,7 @@
                   15+
                 </h3>
                 <h3 class="mt-2 leading-5 font-medium sm:font-normal">
-                  Excellent LPDP Alumni
+                  {{ $t('statistics_alumni') }}
                 </h3>
               </div>
             </div>
@@ -228,7 +298,7 @@
           >
             <div class="h-full flex flex-col justify-center text-white text-center">
               <h3 class="flex flex-row items-center justify-center text-3xl font-medium">
-                Get Started<span class="ml-4"><svg
+                {{ $t('header_get_started') }}<span class="ml-4"><svg
                   class="mt-1 w-16 h-16 rotate-45 border-2 border-white rounded-full p-4"
                   data-slot="icon"
                   fill="none"
@@ -268,13 +338,13 @@
           data-aos-easing="ease-in-sine"
         >
           <p class="text-base font-semibold leading-7 text-[#ff6600]">
-            Our Service
+            {{ $t('services_title_1') }}
           </p>
           <div class="flex items-baseline">
             <h2
               class="mt-2 text-3xl w-full sm:w-2/5 font-bold tracking-tight text-gray-900 sm:text-6xl"
             >
-              What Services We're Offering
+              {{ $t('services_title') }}
             </h2>
             <p class="mt-6 w-3/5 text-lg leading-8 text-gray-500 hidden">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
@@ -298,21 +368,21 @@
               <h1
                 class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
               >
-                Consulting Services in Public Policy
+                {{ $t('services_consulting_services') }}
               </h1>
             </div>
             <div>
               <h1
                 class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
               >
-                3rd Party Researchers, Surveyors, and Data Providers
+                {{ $t('services_third_party_services') }}
               </h1>
             </div>
             <div>
               <h1
                 class="py-4 sm:py-8 text-lg font-medium tracking-tight text-gray-900 sm:text-2xl"
               >
-                Advisory Services from Experts and Thought Leaders
+                {{ $t('services_advisory_services') }}
               </h1>
             </div>
           </div>
@@ -577,27 +647,27 @@
           >
             <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
-                About Us
+                {{ $t('menu_about_us') }}
               </h2>
               <p
                 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
               >
-                Strategy to Policy, Complexity to Simplicity
+                {{ $t('about_us_title') }}
               </p>
               <p class="mt-6 text-lg text-gray-600">
-                Our values underpin our commitment to delivering exceptional service, characterized by national pride and adherence to international standards:
+                {{ $t('about_us_description') }}
               </p>
               <ol class="mt-4 list-disc list-inside text-lg text-gray-600">
-                <li>Customer Centricity</li>
-                <li>Integrity</li>
-                <li>Synergy</li>
-                <li>Innovation</li>
+                <li>{{ $t('about_us_values_customer_centricity') }}</li>
+                <li>{{ $t('about_us_values_integrity') }}</li>
+                <li>{{ $t('about_us_values_synergy') }}</li>
+                <li>{{ $t('about_us_values_innovation') }}</li>
               </ol>
               <div class="mt-10">
                 <a
                   href="#"
                   class="text-lg font-medium leading-6 text-white bg-[#ff6600] px-6 py-4"
-                >Contact Us</a>
+                >{{ $t('about_us_contact_us') }}</a>
               </div>
             </div>
           </div>
@@ -695,7 +765,7 @@
               data-aos-offset="0"
               data-aos-easing="ease-in-sine"
             >
-              Why Choose Us
+              {{ $t('why_choose_us_title') }}
             </h2>
             <p
               class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
@@ -704,7 +774,7 @@
               data-aos-offset="0"
               data-aos-easing="ease-in-sine"
             >
-              Why You Should Choose LensaGaruda
+              {{ $t('why_choose_us_subtitle') }}
             </p>
             <dl class="mt-5 grid grid-cols-1 gap-2">
               <div
@@ -721,7 +791,7 @@
                   01
                 </dd>
                 <dt class="text-lg font-normal text-gray-900">
-                  Our greatest asset is its LPDP awardee fellows from top global universities, dedicated to addressing the nation's challenges.
+                  {{ $t('why_choose_us_point_1_description') }}
                 </dt>
               </div>
               <div
@@ -738,7 +808,7 @@
                   02
                 </dd>
                 <dt class="text-lg font-normal text-gray-900">
-                  Our deliverables are both academical and practical, providing policy recommendations that ease the government in effective policy formulation and execution.
+                  {{ $t('why_choose_us_point_2_description') }}
                 </dt>
               </div>
               <div
@@ -755,7 +825,7 @@
                   03
                 </dd>
                 <dt class="text-lg font-normal text-gray-900">
-                  Our extensive intellectual properties and expert networks benefit from our leadership's diverse backgrounds, including corporate and bureaucratic experience.
+                  {{ $t('why_choose_us_point_3_description') }}
                 </dt>
               </div>
             </dl>
@@ -774,13 +844,13 @@
           data-aos-easing="ease-in-sine"
         >
           <p class="text-base font-semibold leading-7 text-[#ff6600]">
-            Our Projects
+            {{ $t('projects_title_1') }}
           </p>
           <div class="flex flex-col sm:flex-row items-baseline sm:space-x-8">
             <h2
               class="mt-2 text-3xl sm:w-2/5 font-bold tracking-tight text-gray-900 sm:text-6xl"
             >
-              Discover Our Selected Projects
+              {{ $t('projects_title') }}
             </h2>
             <p class="mt-6 sm:pl-20 sm:w-3/5 text-lg leading-8 text-gray-500 hidden">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
@@ -789,9 +859,6 @@
             </p>
           </div>
         </div>
-        <!-- <div
-          class="mt-16 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3 lg:items-center px-1"
-        > -->
         <dl class="mt-16 grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
           <div
             class="flex flex-col"
@@ -809,7 +876,7 @@
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
-                Investment is the key to achieving industrial downstreaming in Indonesia, with varying impacts on different commodity industries; for instance, electric vehicle battery production investments significantly boost productivity more than nickel mining investments. This study aims to implement strategic programs outlined in the Roadmap for Strategic Investment Downstreaming and provide information for potential investors and stakeholders.
+                {{ $t('projects_project_1_description') }}
               </p>
             </dd>
           </div>
@@ -829,7 +896,7 @@
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
-                EoDB was suspended in 2021 due to transparency and methodology issues, but the World Bank is preparing a replacement called B-Ready; this study aims to understand the relationship between the ease of doing business (EoDB) survey and foreign direct investment (FDI).
+                {{ $t('projects_project_2_description') }}
               </p>
             </dd>
           </div>
@@ -849,93 +916,11 @@
             </dt>
             <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-500">
               <p class="flex-auto">
-                Every Indonesian youth deserves protection from destructive influences like drug abuse, pornography, and other threats to national moral quality, as their role as moral strength, social control, and agents of change in national development is crucial. This study aims to prepare strong, mentally healthy human resources for a prosperous Indonesia in 2045.
+                {{ $t('projects_project_3_description') }}
               </p>
             </dd>
           </div>
         </dl>
-        <!-- <article
-            class="flex flex-col items-start justify-between"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="0"
-            data-aos-delay="200"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="relative w-full">
-              <img
-                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-              >
-            </div>
-            <div class="max-w-xl">
-              <div class="group relative">
-                <h3 class="mt-6 text-2xl font-semibold leading-6 text-gray-900">
-                  Boost your conversion rate
-                </h3>
-                <p class="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
-                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
-                  totam vitae illo. Non aliquid explicabo unde.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article
-            class="flex flex-col items-start justify-between"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="0"
-            data-aos-delay="400"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="relative w-full">
-              <img
-                src="https://images.unsplash.com/photo-1535978115060-d01ae6702684?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-              >
-            </div>
-            <div class="max-w-xl">
-              <div class="group relative">
-                <h3 class="mt-6 text-2xl font-semibold leading-6 text-gray-900">
-                  Boost your conversion rate
-                </h3>
-                <p class="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
-                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
-                  totam vitae illo. Non aliquid explicabo unde.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article
-            class="flex flex-col items-start justify-between"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="0"
-            data-aos-delay="600"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="relative w-full">
-              <img
-                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                class="aspect-[16/9] w-full bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-              >
-            </div>
-            <div class="max-w-xl">
-              <div class="group relative">
-                <h3 class="mt-6 text-2xl font-semibold leading-6 text-gray-900">
-                  Boost your conversion rate
-                </h3>
-                <p class="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
-                  Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
-                  totam vitae illo. Non aliquid explicabo unde.
-                </p>
-              </div>
-            </div>
-          </article> -->
-        <!-- </div> -->
       </div>
     </div>
 
@@ -949,13 +934,13 @@
           data-aos-easing="ease-in-sine"
         >
           <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
-            Our Team
+            {{ $t('our_team_title') }}
           </h2>
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Meet Our Board of Director
+            {{ $t('our_team_subtitle') }}
           </h2>
           <p class="mt-4 text-lg leading-8 text-gray-400">
-            A group of expert's to realize your idea.
+            {{ $t('our_team_description') }}
           </p>
         </div>
         <ul
@@ -1130,264 +1115,6 @@
               </ul>
             </div>
           </li>
-          <!-- <li
-            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
-              <h3
-                class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
-              >
-                Ansy Alghasi
-              </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CEO
-              </p>
-              <p class="text-sm font-medium leading-6 text-gray-400">
-                Universitas Bandung
-              </p>
-            </div>
-            <img
-              class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
-              src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
-              alt=""
-            >
-            <div
-              class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
-            >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
-              <ul
-                role="list"
-                class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
-              >
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">Instagram</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">X</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li
-            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-offset="50"
-            data-aos-delay="400"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
-              <h3
-                class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
-              >
-                Megawati
-              </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CMO
-              </p>
-              <p class="text-sm font-medium leading-6 text-gray-400">
-                Universitas Bandung
-              </p>
-            </div>
-            <img
-              class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
-              src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
-              alt=""
-            >
-            <div
-              class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
-            >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
-              <ul
-                role="list"
-                class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
-              >
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">Instagram</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">X</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li
-            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-offset="50"
-            data-aos-delay="600"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
-              <h3
-                class="text-2xl w-32 text-left font-bold leading-7 tracking-tight text-white"
-              >
-                Fitri N. Anggraeni
-              </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                Senior Designer
-              </p>
-              <p class="text-sm font-medium leading-6 text-gray-400">
-                Universitas Bandung
-              </p>
-            </div>
-            <img
-              class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
-              src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
-              alt=""
-            >
-            <div
-              class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
-            >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
-              <ul
-                role="list"
-                class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
-              >
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">Instagram</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">X</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -1402,7 +1129,7 @@
           data-aos-easing="ease-in-sine"
         >
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Meet Our Commissioner
+            {{ $t('our_commissioner_title') }}
           </h2>
         </div>
         <ul
@@ -1577,264 +1304,6 @@
               </ul>
             </div>
           </li>
-          <!-- <li
-            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-offset="50"
-            data-aos-delay="200"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
-              <h3
-                class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
-              >
-                Ansy Alghasi
-              </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CEO
-              </p>
-              <p class="text-sm font-medium leading-6 text-gray-400">
-                Universitas Bandung
-              </p>
-            </div>
-            <img
-              class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
-              src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
-              alt=""
-            >
-            <div
-              class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
-            >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
-              <ul
-                role="list"
-                class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
-              >
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">Instagram</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">X</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li
-            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-offset="50"
-            data-aos-delay="400"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
-              <h3
-                class="text-2xl text-left font-bold leading-7 tracking-tight text-white"
-              >
-                Megawati
-              </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                CMO
-              </p>
-              <p class="text-sm font-medium leading-6 text-gray-400">
-                Universitas Bandung
-              </p>
-            </div>
-            <img
-              class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
-              src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
-              alt=""
-            >
-            <div
-              class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
-            >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
-              <ul
-                role="list"
-                class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
-              >
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">Instagram</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">X</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li
-            class="relative group w-full h-auto aspect-3/4 overflow-hidden bg-gray-800"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-offset="50"
-            data-aos-delay="600"
-            data-aos-easing="ease-in-sine"
-          >
-            <div class="mt-6 ml-6 absolute w-full flex flex-col items-start">
-              <h3
-                class="text-2xl w-32 text-left font-bold leading-7 tracking-tight text-white"
-              >
-                Fitri N. Anggraeni
-              </h3>
-              <p class="text-sm leading-6 text-gray-400">
-                Senior Designer
-              </p>
-              <p class="text-sm font-medium leading-6 text-gray-400">
-                Universitas Bandung
-              </p>
-            </div>
-            <img
-              class="absolute bottom-0 right-0 h-48 w-48 md:w-full md:h-full object-cover object-right-top"
-              src="https://www.freeiconspng.com/thumbs/men-suit-png/men-suit-png-11.png"
-              alt=""
-            >
-            <div
-              class="relative h-96 invisible group-hover:visible transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-700"
-            >
-              <div class="absolute w-full h-96 bg-black opacity-60" />
-              <ul
-                role="list"
-                class="absolute w-full h-96 object-center flex items-center justify-center gap-x-6"
-              >
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">Instagram</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">X</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white hover:text-[#ff6600]">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg
-                      class="h-8 w-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -1850,7 +1319,7 @@
           class="mx-auto max-w-2xl lg:max-w-none"
         >
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Trusted by the world’s most innovative teams
+            {{ $t('trusted_by') }}
           </h2>
         </div>
         <div
@@ -1873,7 +1342,7 @@
       </div>
     </div>
 
-    <div class="relative isolate bg-white">
+    <div id="contactus" class="relative isolate bg-white">
       <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div
           class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
@@ -1889,15 +1358,15 @@
             />
 
             <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
-              Let’s Talk
+              {{ $t('lets_talk') }}
             </h2>
             <h2 class="text-3xl font-bold tracking-tight text-gray-900">
-              Get In Touch With Us
+              {{ $t('get_in_touch') }}
             </h2>
             <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div class="flex gap-x-4">
                 <dt class="flex-none">
-                  <span class="sr-only">Address</span>
+                  <span class="sr-only">{{ $t('address') }}</span>
                   <svg
                     class="h-7 w-6 text-gray-400"
                     fill="none"
@@ -1921,7 +1390,7 @@
               </div>
               <div class="flex gap-x-4">
                 <dt class="flex-none">
-                  <span class="sr-only">Telephone</span>
+                  <span class="sr-only">{{ $t('form_phone_number') }}</span>
                   <svg
                     class="h-7 w-6 text-gray-400"
                     fill="none"
@@ -2255,7 +1724,8 @@ export default {
       ],
       name: '',
       message: '',
-      isMenuOpen: false
+      isMenuOpen: false,
+      showLanguageSwitch: false
     }
   },
   head () {
@@ -2295,7 +1765,8 @@ export default {
     }
   },
   mounted () {
-    AOS.init({})
+    AOS.init({
+    })
   },
   methods: {
     sendMessage () {
@@ -2306,6 +1777,29 @@ export default {
     },
     toggleMenu () {
       this.isMenuOpen = !this.isMenuOpen
+    },
+    switchLanguage (code = 'en') {
+      this.$i18n.setLocale(code)
+      // const oldCode = this.$i18n.locale
+      // this.showLanguageSwitch = false
+      // if (code === this.$i18n.locale) {
+      //   return
+      // }
+
+      // this.$i18n.locale = code
+      // window.history.replaceState('', '', this.switchLocalePath(code))
+      // this.$nuxt.$emit('languageChanged', { code, oldCode })
+    },
+    getLangImage (code) {
+      return require(`~/assets/images/${code}.svg`)
+    },
+    getLangShortName (code) {
+      switch (code) {
+        case 'id':
+          return 'ID'
+        case 'en':
+          return 'EN'
+      }
     }
   }
 }
