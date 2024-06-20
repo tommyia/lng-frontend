@@ -234,24 +234,21 @@
           </h1>
         </div>
         <div
-          class="mt-8 sm:mt-0 mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
+          data-aos="fade-left"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine"
         >
-          <div class="col-span-5 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex">
-            <img
-              class="w-full h-56 object-cover"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-sine"
-              src="https://images.unsplash.com/photo-1550592704-6c76defa9985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            >
-          </div>
           <div
-            class="relative h-full col-span-4 mx-auto lg:mx-0 sm:bg-[#ff6600]"
+            class="mt-8 sm:mt-0 mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
           >
-            <span
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-sine"
+            <div class="col-span-5 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex">
+              <img
+                class="w-full h-56 object-cover"
+                src="https://images.unsplash.com/photo-1550592704-6c76defa9985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              >
+            </div>
+            <div
+              class="relative h-full col-span-4 mx-auto lg:mx-0 sm:bg-[#ff6600]"
             >
               <div class="grid grid-cols-3 h-full">
                 <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
@@ -279,21 +276,20 @@
                   </h3>
                 </div>
               </div>
-            </span>
-            <div class="absolute w-full h-auto z-0 bg-[#ff6600] inset-0 blur-2xl" style="aspect-ratio:1/1; background: rgb(255,102,0); background: radial-gradient(circle, rgba(255,102,0,0.25) 0%, rgba(255,102,0,0) 60%);" />
+              <div class="absolute w-full h-auto z-0 bg-[#ff6600] inset-0 blur-2xl" style="aspect-ratio:1/1; background: rgb(255,102,0); background: radial-gradient(circle, rgba(255,102,0,0.25) 0%, rgba(255,102,0,0) 60%);" />
+            </div>
           </div>
         </div>
         <div
-          class="mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
+          data-aos="fade-right"
+          data-aos-duration="400"
+          data-aos-easing="ease-in-sine"
         >
           <div
-            class="w-full h-full relative col-span-3 mx-auto lg:mx-0 bg-[#ff6600] py-8 sm:py-0"
+            class="mx-auto max-w-7xl px-6 py-8 sm:py-32 lg:grid lg:grid-cols-9 lg:items-center lg:gap-x-0 lg:px-0 lg:py-0"
           >
-            <span
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="-300"
-              data-aos-easing="ease-in-sine"
+            <div
+              class="w-full h-full relative col-span-3 mx-auto lg:mx-0 bg-[#ff6600] py-8 sm:py-0"
             >
               <div class="h-full flex flex-col justify-center text-white text-center">
                 <h3 class="flex flex-row items-center justify-center text-3xl font-medium">
@@ -311,18 +307,15 @@
                   </svg></span>
                 </h3>
               </div>
-            </span>
-          </div>
-          <div
-            class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
-          >
-            <img
-              class="w-full h-56 object-cover"
-              src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            </div>
+            <div
+              class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex"
             >
+              <img
+                class="w-full h-56 object-cover"
+                src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -354,13 +347,13 @@
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine"
           class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-3 lg:items-center"
         >
           <div
             class="col-span-2 mt-8 sm:mt-16 grid grid-cols-1 divide-y"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
           >
             <div>
               <h1
@@ -391,9 +384,6 @@
                   <div
                     aria-hidden="true"
                     class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
-                    data-aos="fade-left"
-                    data-aos-duration="1300"
-                    data-aos-easing="ease-in-sine"
                   >
                     <svg
                       class="absolute left-1/2 -top-9 -ml-3 lg:-right-10 lg:left-auto"
@@ -431,9 +421,6 @@
                   <div
                     aria-hidden="true"
                     class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-sine"
                   >
                     <div
                       class="absolute right-1/2 -bottom-9 -ml-3 lg:right-32 lg:left-auto w-64 h-64 bg-[#ff6600]"
@@ -441,9 +428,6 @@
                   </div>
                   <div
                     class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
-                    data-aos="fade-left"
-                    data-aos-duration="1100"
-                    data-aos-easing="ease-in-sine"
                   >
                     <div class="relative overflow-hidden pb-10 pt-64">
                       <img
@@ -464,14 +448,13 @@
     <div id="aboutus" class="overflow-hidden bg-white py-8 sm:py-24">
       <div class="mx-auto max-w-7xl md:px-6 lg:px-0">
         <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine"
           class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center"
         >
           <div
             class="hidden sm:block relative mt-20"
-            data-aos="fade-right"
-            data-aos-duration="600"
-            data-aos-offset="-100"
-            data-aos-easing="ease-in-sine"
           >
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
               <div
@@ -635,9 +618,6 @@
           </div>
           <div
             class="px-6 lg:px-0 lg:pr-4 lg:pt-0"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
           >
             <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
@@ -671,13 +651,14 @@
 
     <div id="why" class="relative mt-32 mb-32">
       <div
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-offset="-100"
+        data-aos-easing="ease-in-sine"
         class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:gap-24 lg:px-8"
       >
         <div
           class="hidden sm:block relative sm:py-16 lg:py-0"
-          data-aos="fade-right"
-          data-aos-duration="600"
-          data-aos-easing="ease-in-sine"
         >
           <div
             aria-hidden="true"
@@ -752,16 +733,13 @@
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
             <h2
               class="text-base font-semibold leading-7 text-[#ff6600]"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-sine"
             >
               {{ $t('why_choose_us_title') }}
             </h2>
             <p
               class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
               data-aos="fade-left"
-              data-aos-duration="1000"
+              data-aos-duration="400"
               data-aos-easing="ease-in-sine"
             >
               {{ $t('why_choose_us_subtitle') }}
@@ -770,8 +748,7 @@
               <div
                 class="py-2"
                 data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="50"
+                data-aos-duration="400"
                 data-aos-easing="ease-in-sine"
               >
                 <dd
@@ -786,8 +763,8 @@
               <div
                 class="py-2"
                 data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="150"
+                data-aos-duration="400"
+                data-aos-delay="50"
                 data-aos-easing="ease-in-sine"
               >
                 <dd
@@ -802,8 +779,8 @@
               <div
                 class="py-2"
                 data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="250"
+                data-aos-duration="400"
+                data-aos-delay="100"
                 data-aos-easing="ease-in-sine"
               >
                 <dd
@@ -821,7 +798,7 @@
       </div>
     </div>
 
-    <div id="project" class="bg-white py-8 sm:py-24">
+    <div id="project" class="bg-white py-8 sm:pt-24 sm:pb-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           class="mx-auto lg:mx-0"
@@ -850,8 +827,7 @@
           <div
             class="flex flex-col"
             data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
+            data-aos-duration="400"
             data-aos-easing="ease-in-sine"
           >
             <dt class="text-lg font-bold leading-7 text-gray-900">
@@ -869,8 +845,8 @@
           <div
             class="flex flex-col"
             data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="400"
+            data-aos-duration="400"
+            data-aos-delay="100"
             data-aos-easing="ease-in-sine"
           >
             <dt class="text-lg font-bold leading-7 text-gray-900">
@@ -888,8 +864,8 @@
           <div
             class="flex flex-col"
             data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="600"
+            data-aos-duration="400"
+            data-aos-delay="200"
             data-aos-easing="ease-in-sine"
           >
             <dt class="text-lg font-bold leading-7 text-gray-900">
@@ -913,7 +889,7 @@
         <div
           class=""
           data-aos="fade-up"
-          data-aos-duration="600"
+          data-aos-duration="400"
           data-aos-easing="ease-in-sine"
         >
           <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
@@ -927,14 +903,13 @@
           </p>
         </div>
         <ul
+          data-aos="fade-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in-sine"
           role="list"
           class="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-8"
         >
           <li
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="200"
-            data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
           >
             <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Ansy%20Alghasi_ga26aHAjq.png?updatedAt=1718317891730" alt="">
@@ -986,10 +961,6 @@
             </div>
           </li>
           <li
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="400"
-            data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
           >
             <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Megawanti_s_W36pCIEq1O.png?updatedAt=1718317891174" alt="">
@@ -1041,10 +1012,6 @@
             </div>
           </li>
           <li
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="600"
-            data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
           >
             <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Fitri%20N.%20Anggraeni_square_q0sjPT-3l.png?updatedAt=1718317889800" alt="">
@@ -1112,14 +1079,13 @@
           </h2>
         </div>
         <ul
+          data-aos="fade-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in-sine"
           role="list"
           class="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
           <li
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="200"
-            data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
           >
             <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Yosua%20Yosafat%20Andre_k8HiFC0Pa.png?updatedAt=1718317891862" alt="">
@@ -1171,10 +1137,6 @@
             </div>
           </li>
           <li
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="400"
-            data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
           >
             <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/M.%20Diaz%20Alichsan_0jlVxc8yx.png?updatedAt=1718317890669" alt="">
@@ -1226,10 +1188,6 @@
             </div>
           </li>
           <li
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="600"
-            data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
           >
             <img class="bg-gray-300 w-full h-auto aspect-[1/1] flex-none object-cover" src="https://ik.imagekit.io/9ceqtmg8a7b/client/lgn/team/Asep%20Cahyana_YA3FnSR7D.png?updatedAt=1718317891100" alt="">
@@ -1298,7 +1256,7 @@
         </div>
         <div
           data-aos="fade-left"
-          data-aos-duration="1000"
+          data-aos-duration="400"
           data-aos-delay="200"
           data-aos-easing="ease-in-sine"
           class="mt-4"
@@ -1320,7 +1278,7 @@
         <div
           class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
           data-aos="fade-right"
-          data-aos-duration="600"
+          data-aos-duration="400"
           data-aos-easing="ease-in-sine"
         >
           <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -1416,8 +1374,7 @@
         <form
           class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
           data-aos="fade-left"
-          data-aos-duration="800"
-          data-aos-delay="200"
+          data-aos-duration="400"
           data-aos-easing="ease-in-sine"
           @submit.prevent="sendMessage"
         >
