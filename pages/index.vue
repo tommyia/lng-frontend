@@ -2,14 +2,9 @@
 <template>
   <div class="overflow-x-hidden sm:overflow-x-clip">
     <div class="bg-white">
-      <header class="absolute inset-x-0 top-0 z-50">
+      <header class="bg-white fixed inset-x-0 top-0 z-50">
         <nav
           class="relative mx-auto max-w-7xl px-6 lg:px-0 flex items-center justify-between p-6"
-          aria-label="Global"
-          data-aos="fade-down"
-          data-aos-duration="400"
-          data-aos-offset="0"
-          data-aos-easing="ease-in-sine"
         >
           <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5 flex space-x-2 items-center">
@@ -139,7 +134,6 @@
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div v-if="isMenuOpen" class="" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50" />
           <div
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
           >
@@ -232,10 +226,11 @@
           </h1>
           <h1
             class="mt-6 sm:mt-0 relative col-span-3 h-full text-xl font-normal tracking-tight text-gray-900 sm:text-2xl text-center sm:text-left"
-            data-aos="fade-left"
-            data-aos-easing="ease-in-sine"
           >
-            {{ $t('header_description') }}
+            <span
+              data-aos="fade-left"
+              data-aos-easing="ease-in-sine"
+            >{{ $t('header_description') }}</span>
           </h1>
         </div>
         <div
@@ -245,7 +240,6 @@
             <img
               class="w-full h-56 object-cover"
               data-aos="fade-right"
-              data-aos-offset="300"
               data-aos-duration="1000"
               data-aos-easing="ease-in-sine"
               src="https://images.unsplash.com/photo-1550592704-6c76defa9985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -253,37 +247,39 @@
           </div>
           <div
             class="relative h-full col-span-4 mx-auto lg:mx-0 sm:bg-[#ff6600]"
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
           >
-            <div class="grid grid-cols-3 h-full">
-              <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
-                <h3 class="text-4xl font-bold">
-                  40+
-                </h3>
-                <h3 class="mt-2 leading-5 font-medium sm:font-normal">
-                  {{ $t('statistics_company_clients') }}
-                </h3>
+            <span
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
+            >
+              <div class="grid grid-cols-3 h-full">
+                <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+                  <h3 class="text-4xl font-bold">
+                    40+
+                  </h3>
+                  <h3 class="mt-2 leading-5 font-medium sm:font-normal">
+                    {{ $t('statistics_company_clients') }}
+                  </h3>
+                </div>
+                <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+                  <h3 class="text-4xl font-bold">
+                    7+
+                  </h3>
+                  <h3 class="mt-2 leading-5 font-medium sm:font-normal">
+                    {{ $t('statistics_recent_portfolios_1') }} <br>{{ $t('statistics_recent_portfolios_2') }}
+                  </h3>
+                </div>
+                <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
+                  <h3 class="text-4xl font-bold">
+                    15+
+                  </h3>
+                  <h3 class="mt-2 leading-5 font-medium sm:font-normal">
+                    {{ $t('statistics_alumni') }}
+                  </h3>
+                </div>
               </div>
-              <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
-                <h3 class="text-4xl font-bold">
-                  7+
-                </h3>
-                <h3 class="mt-2 leading-5 font-medium sm:font-normal">
-                  {{ $t('statistics_recent_portfolios_1') }} <br>{{ $t('statistics_recent_portfolios_2') }}
-                </h3>
-              </div>
-              <div class="col-span-3 sm:col-span-1 items-center justify-center flex flex-col text-gray-900 sm:text-white text-center px-8 py-8 sm:py-10">
-                <h3 class="text-4xl font-bold">
-                  15+
-                </h3>
-                <h3 class="mt-2 leading-5 font-medium sm:font-normal">
-                  {{ $t('statistics_alumni') }}
-                </h3>
-              </div>
-            </div>
+            </span>
             <div class="absolute w-full h-auto z-0 bg-[#ff6600] inset-0 blur-2xl" style="aspect-ratio:1/1; background: rgb(255,102,0); background: radial-gradient(circle, rgba(255,102,0,0.25) 0%, rgba(255,102,0,0) 60%);" />
           </div>
         </div>
@@ -292,26 +288,30 @@
         >
           <div
             class="w-full h-full relative col-span-3 mx-auto lg:mx-0 bg-[#ff6600] py-8 sm:py-0"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
           >
-            <div class="h-full flex flex-col justify-center text-white text-center">
-              <h3 class="flex flex-row items-center justify-center text-3xl font-medium">
-                {{ $t('header_get_started') }}<span class="ml-4"><svg
-                  class="mt-1 w-16 h-16 rotate-45 border-2 border-white rounded-full p-4"
-                  data-slot="icon"
-                  fill="none"
-                  stroke-width="3"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                </svg></span>
-              </h3>
-            </div>
+            <span
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="-300"
+              data-aos-easing="ease-in-sine"
+            >
+              <div class="h-full flex flex-col justify-center text-white text-center">
+                <h3 class="flex flex-row items-center justify-center text-3xl font-medium">
+                  {{ $t('header_get_started') }}<span class="ml-4"><svg
+                    class="mt-1 w-16 h-16 rotate-45 border-2 border-white rounded-full p-4"
+                    data-slot="icon"
+                    fill="none"
+                    stroke-width="3"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg></span>
+                </h3>
+              </div>
+            </span>
           </div>
           <div
             class="col-span-6 mx-auto lg:mx-0 lg:flex-auto hidden sm:flex"
@@ -333,8 +333,7 @@
         <div
           class="mx-auto lg:mx-0"
           data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="50"
+          data-aos-duration="600"
           data-aos-easing="ease-in-sine"
         >
           <p class="text-base font-semibold leading-7 text-[#ff6600]">
@@ -361,7 +360,6 @@
             class="col-span-2 mt-8 sm:mt-16 grid grid-cols-1 divide-y"
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-offset="100"
             data-aos-easing="ease-in-sine"
           >
             <div>
@@ -395,7 +393,6 @@
                     class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
                     data-aos="fade-left"
                     data-aos-duration="1300"
-                    data-aos-offset="100"
                     data-aos-easing="ease-in-sine"
                   >
                     <svg
@@ -436,7 +433,6 @@
                     class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
                     data-aos="fade-left"
                     data-aos-duration="1000"
-                    data-aos-offset="100"
                     data-aos-easing="ease-in-sine"
                   >
                     <div
@@ -447,7 +443,6 @@
                     class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-0"
                     data-aos="fade-left"
                     data-aos-duration="1100"
-                    data-aos-offset="100"
                     data-aos-easing="ease-in-sine"
                   >
                     <div class="relative overflow-hidden pb-10 pt-64">
@@ -466,7 +461,7 @@
       </div>
     </div>
 
-    <div id="aboutus" class="overflow-hidden bg-white py-24 sm:py-32">
+    <div id="aboutus" class="overflow-hidden bg-white py-8 sm:py-24">
       <div class="mx-auto max-w-7xl md:px-6 lg:px-0">
         <div
           class="grid grid-cols-1 gap-x-24 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-center"
@@ -474,8 +469,8 @@
           <div
             class="hidden sm:block relative mt-20"
             data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-offset="50"
+            data-aos-duration="600"
+            data-aos-offset="-100"
             data-aos-easing="ease-in-sine"
           >
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
@@ -642,7 +637,6 @@
             class="px-6 lg:px-0 lg:pr-4 lg:pt-0"
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-offset="50"
             data-aos-easing="ease-in-sine"
           >
             <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
@@ -682,9 +676,7 @@
         <div
           class="hidden sm:block relative sm:py-16 lg:py-0"
           data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-offset="0"
-          data-aos-delay="200"
+          data-aos-duration="600"
           data-aos-easing="ease-in-sine"
         >
           <div
@@ -762,7 +754,6 @@
               class="text-base font-semibold leading-7 text-[#ff6600]"
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-offset="0"
               data-aos-easing="ease-in-sine"
             >
               {{ $t('why_choose_us_title') }}
@@ -771,7 +762,6 @@
               class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-offset="0"
               data-aos-easing="ease-in-sine"
             >
               {{ $t('why_choose_us_subtitle') }}
@@ -781,8 +771,7 @@
                 class="py-2"
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                data-aos-offset="100"
-                data-aos-delay="100"
+                data-aos-delay="50"
                 data-aos-easing="ease-in-sine"
               >
                 <dd
@@ -798,8 +787,7 @@
                 class="py-2"
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                data-aos-offset="100"
-                data-aos-delay="200"
+                data-aos-delay="150"
                 data-aos-easing="ease-in-sine"
               >
                 <dd
@@ -815,8 +803,7 @@
                 class="py-2"
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                data-aos-offset="100"
-                data-aos-delay="300"
+                data-aos-delay="250"
                 data-aos-easing="ease-in-sine"
               >
                 <dd
@@ -834,13 +821,13 @@
       </div>
     </div>
 
-    <div id="project" class="bg-white py-24 sm:py-32">
+    <div id="project" class="bg-white py-8 sm:py-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           class="mx-auto lg:mx-0"
           data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="50"
+          data-aos-duration="600"
+          data-aos-offset="-100"
           data-aos-easing="ease-in-sine"
         >
           <p class="text-base font-semibold leading-7 text-[#ff6600]">
@@ -864,7 +851,6 @@
             class="flex flex-col"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-offset="50"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
           >
@@ -884,7 +870,6 @@
             class="flex flex-col"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-offset="50"
             data-aos-delay="400"
             data-aos-easing="ease-in-sine"
           >
@@ -904,7 +889,6 @@
             class="flex flex-col"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-offset="50"
             data-aos-delay="600"
             data-aos-easing="ease-in-sine"
           >
@@ -929,8 +913,7 @@
         <div
           class=""
           data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
+          data-aos-duration="600"
           data-aos-easing="ease-in-sine"
         >
           <h2 class="text-base font-semibold leading-7 text-[#ff6600]">
@@ -950,7 +933,6 @@
           <li
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-offset="50"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
@@ -1006,7 +988,6 @@
           <li
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-offset="50"
             data-aos-delay="400"
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
@@ -1062,7 +1043,6 @@
           <li
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-offset="50"
             data-aos-delay="600"
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
@@ -1124,8 +1104,7 @@
         <div
           class=""
           data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="50"
+          data-aos-duration="600"
           data-aos-easing="ease-in-sine"
         >
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -1139,7 +1118,6 @@
           <li
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-offset="50"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
@@ -1195,7 +1173,6 @@
           <li
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-offset="50"
             data-aos-delay="400"
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
@@ -1251,7 +1228,6 @@
           <li
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-offset="50"
             data-aos-delay="600"
             data-aos-easing="ease-in-sine"
             class="flex flex-col gap-4 pt-12"
@@ -1312,9 +1288,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-delay="100"
+          data-aos-duration="600"
           data-aos-easing="ease-in-sine"
           class="mx-auto max-w-2xl lg:max-w-none"
         >
@@ -1325,7 +1299,6 @@
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-offset="100"
           data-aos-delay="200"
           data-aos-easing="ease-in-sine"
           class="mt-4"
@@ -1347,9 +1320,7 @@
         <div
           class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
           data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-offset="50"
-          data-aos-delay="200"
+          data-aos-duration="600"
           data-aos-easing="ease-in-sine"
         >
           <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -1446,7 +1417,6 @@
           class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
           data-aos="fade-left"
           data-aos-duration="800"
-          data-aos-offset="50"
           data-aos-delay="200"
           data-aos-easing="ease-in-sine"
           @submit.prevent="sendMessage"
@@ -1805,6 +1775,11 @@ export default {
 }
 </script>
 <style>
+.bg-nav {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.65);
+  }
 @keyframes slide {
   0% {
     transform: translateX(0%);
